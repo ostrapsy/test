@@ -367,15 +367,15 @@ $(function() {
 	switch(condition) {
 		case 1:
 			window.settings.condition_likes = settings.condition_1_likes;
-			window.others.posts[1].likes = settings.condition_1_adjusted_likes;
+			window.others2.posts[1].likes = settings.condition_1_adjusted_likes;
 			break;
 		case 2:
 			window.settings.condition_likes = settings.condition_2_likes;
-			window.others.posts[1].likes = settings.condition_2_adjusted_likes;
+			window.others2.posts[1].likes = settings.condition_2_adjusted_likes;
 			break;
 		case 3:
 			window.settings.condition_likes = settings.condition_3_likes;
-			window.others.posts[1].likes = settings.condition_3_adjusted_likes;
+			window.others2.posts[1].likes = settings.condition_3_adjusted_likes;
 			break;
 	}	
 	  
