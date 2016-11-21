@@ -115,7 +115,7 @@ $(function() {
   	$('#submit_demo').on('click',function() {
 
   		var error = 0;
-  		var uname = $('#demo').val();
+  		var uname = $('#userdemo').val();
 
   		if(uname == "") {
   			error = 1;
@@ -129,7 +129,7 @@ $(function() {
 
   		if(error == 0) {
 			$('#demo').hide();
-			window.demo = $('#demo').val();
+			window.demo = $('#userdemo').val();
   			init_avatar();  			
   		} else {
   			alertify.log(errormsg,"error");
