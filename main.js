@@ -129,7 +129,7 @@ $(function() {
 
   		if(error == 0) {
 			$('#demo').hide();
-			window.username = $('#demo').val();
+			window.demo = $('#demo').val();
   			init_avatar();  			
   		} else {
   			alertify.log(errormsg,"error");
