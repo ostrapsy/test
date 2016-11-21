@@ -109,9 +109,7 @@ $(function() {
 	  
   function init_demo() {
 
-  	$('#age').show();
-	$('#sex').show();
-	$('#religion').show();
+	$('#demo').show();
 
     
   	$('#submit_demo').on('click',function() {
@@ -130,7 +128,7 @@ $(function() {
   		}  		
 
   		if(error == 0) {
-			$('#sex').hide();
+			$('#demo').hide();
 			window.username = $('#demo').val();
   			init_avatar();  			
   		} else {
@@ -173,9 +171,6 @@ $(function() {
 
   // **Slide:** **Description**   
   function init_text() {
-	$('#age').show();
-	$('#sex').show();
-	$('#religion').show();
   	$('#text').show();
 
   	$("#description").keyup(function(){
