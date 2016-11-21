@@ -106,6 +106,40 @@ $(function() {
   	});
   }
 
+	  
+  function init_demo() {
+
+  	$('#age').show();
+	$('#sex').show();
+	$('#religion').show();
+
+    
+  	$('#submit_username').on('click',function() {
+
+  		var error = 0;
+  		var uname = $('#username').val();
+
+  		if(uname == "") {
+  			error = 1;
+  			errormsg = 'Please enter text';
+  			uname = "undefined";
+  		}
+  		if(not_alphanumeric(uname)) {
+  			error = 1;
+  			errormsg = 'Please only letters (and no spaces)';
+  		}  		
+
+  		if(error == 0) {
+			$('#name').hide();
+			window.username = $('#username').val();
+  			init_avatar();  			
+  		} else {
+  			alertify.log(errormsg,"error");
+  		}
+
+
+  	});
+  }
   // **Slide:** **Avatar**       
   // Avatar slide in which the participant is asked to select an avatar
    
@@ -139,6 +173,9 @@ $(function() {
 
   // **Slide:** **Description**   
   function init_text() {
+	$('#age').show();
+	$('#sex').show();
+	$('#religion').show();
   	$('#text').show();
 
   	$("#description").keyup(function(){
