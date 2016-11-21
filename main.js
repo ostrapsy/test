@@ -114,10 +114,10 @@ $(function() {
 	$('#religion').show();
 
     
-  	$('#submit_username').on('click',function() {
+  	$('#submit_demo').on('click',function() {
 
   		var error = 0;
-  		var uname = $('#username').val();
+  		var uname = $('#demo').val();
 
   		if(uname == "") {
   			error = 1;
@@ -130,8 +130,8 @@ $(function() {
   		}  		
 
   		if(error == 0) {
-			$('#name').hide();
-			window.username = $('#username').val();
+			$('#sex').hide();
+			window.username = $('#demo').val();
   			init_avatar();  			
   		} else {
   			alertify.log(errormsg,"error");
