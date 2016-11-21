@@ -255,6 +255,7 @@ $(function() {
 			{
 			  "avatar": 'avatars/' + window.avatar + '.png',
 			  "username": window.username,
+			  "demo": window.demo,
 			  "text": window.description,
 			  "likes": window.settings.condition_likes,
 			  "usernames": window.settings.likes_by
