@@ -97,7 +97,7 @@ $(function() {
   		if(error == 0) {
 			$('#name').hide();
 			window.username = $('#username').val();
-  			init_avatar();  			
+  			init_demo();  			
   		} else {
   			alertify.log(errormsg,"error");
   		}
