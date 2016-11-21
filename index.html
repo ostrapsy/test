@@ -108,7 +108,24 @@ You can edit the instructions text. The text "Your choice of avatar will not be 
 	<br><br>
 </div>	
 
-
+<div id="demo" style="display:none;" class="instr">
+<!-- 
+/* 
+  
+**Username**
+---------
+You can edit the instructions text for entering usernames below.
+*/ 
+-->
+	<h3>Please enter your age, sex and religion</h3>
+	Could be your first name, nickname, or initials<br><br>
+	
+	<input type="text" id="age"  autocomplete="off" /><br>	<br>
+	<input type="text" id="sex"  autocomplete="off" /><br>	<br>
+	<input type="text" id="religion"  autocomplete="off" /><br>	<br>
+	<button type="submit"  id="submit_username">Submit</button>
+</div>
+	
 <div id="text" style="display:none;" class="instr">	
 <!-- 
 /* 
@@ -222,6 +239,9 @@ You can edit the instructions text.
     	
     	<div class="main">
     		
+		<p>{{age}}</p>
+		<p>{{sex}}</p>
+		<p>{{religion}}</p>
     		<p>{{text}}</p>
     	</div>
 
