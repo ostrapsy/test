@@ -158,7 +158,9 @@ $(function() {
 
   		if(error == 0) {
 			$('#demo').hide();
-			window.age = $('#gender').val();
+			window.age = uage;
+			window.gender = ugender;
+			window.religion = ureligion;
   			init_avatar();  			
   		} else {
   			alertify.log(errormsg,"error");
