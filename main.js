@@ -124,10 +124,10 @@ $(function() {
   			errormsg = 'Please enter your age';
   			uage = "undefined";
   		}
-  		if(isNaN(uage)) {
+  		/*if(isNaN(uage)) {
   			error = 1;
   			errormsg = 'Please only letters (and no spaces)';
-  		}  		
+  		}  		*/
 		if(ugender == "") {
 			error = 1;
 			errormsg = 'Please state your gender';
