@@ -120,6 +120,14 @@ $(function() {
   		var error = 0;
   		var uage = $('#age').val();
 		
+		if ($('input[name="religion"]:checked').val() != null) {           
+		   var ureligion = $('input[name="religion"]:checked').val();
+		} else if($('input[name="religion"]:checked').val() == null) {
+			error = 1;
+			errormsg = 'Please state your religion';
+			ureligion ='undefined';
+		}
+		
 		if ($('input[name="gender"]:checked').val() != null) {           
 		   var ugender = $('input[name="gender"]:checked').val();
 		} else if($('input[name="gender"]:checked').val() == null) {
@@ -128,24 +136,14 @@ $(function() {
 			ugender ='undefined';
 		}
 
-  		/*if(uage == "") {
+  		if(uage == "") {
   			error = 1;
   			errormsg = 'Please enter your age';
   			uage = "undefined";
-  		}*/
-  		
-		if(isNaN(uage)) {
+  		} else if(isNaN(uage)) {
   			error = 1;
   			errormsg = 'Please enter your age using only numbers';
   		}  
-		
-		if ($('input[name="religion"]:checked').val() != null) {           
-		   var ureligion = $('input[name="religion"]:checked').val();
-		} else if($('input[name="religion"]:checked').val() == null) {
-			error = 1;
-			errormsg = 'Please state your religion';
-			ureligion ='undefined';
-		}
 
   		if(error == 0) {
 			$('#demo').hide();
