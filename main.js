@@ -128,11 +128,11 @@ $(function() {
 			ugender ='undefined';
 		}
 
-  		if(uage == "") {
+  		/*if(uage == "") {
   			error = 1;
   			errormsg = 'Please enter your age';
   			uage = "undefined";
-  		}
+  		}*/
   		
 		if(isNaN(uage)) {
   			error = 1;
