@@ -96,7 +96,8 @@ $(function() {
 
   		if(error == 0) {
 			$('#name').hide();
-			window.username = $('#username').val();
+			//window.username = $('#username').val();
+			window.username = uname;
   			init_demo();  			
   		} else {
   			alertify.log(errormsg,"error");
@@ -147,15 +148,17 @@ $(function() {
 			errormsg = 'Please state your gender';
 			ugender ='undefined';
 		}*/
-		/*if(ureligion == "") {
+		if ($('input[name="religion"]:checked').val() != null) {           
+		   var ureligion = $('input[name="religion"]:checked').val();
+		} else if($('input[name="religion"]:checked').val() == null) {
 			error = 1;
 			errormsg = 'Please state your religion';
 			ureligion ='undefined';
-		}*/
+		}
 
   		if(error == 0) {
 			$('#demo').hide();
-			window.gender = $('#gender').val();
+			window.age = $('#gender').val();
   			init_avatar();  			
   		} else {
   			alertify.log(errormsg,"error");
