@@ -117,7 +117,7 @@ $(function() {
   		var error = 0;
   		var uage = $('#age').val();
 		//var ugender = $('#gender.gender:checked').val();
-		var ugender = 'none';
+		var ugender = null;
 		if ($('#gender.gender:checked').val() != null) {           
 		   ugender = $('#gender.gender:checked').val();
 		}
