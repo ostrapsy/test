@@ -112,11 +112,11 @@ $(function() {
 	$('#demo').show();
 
     
-  	$('#submit_age' /*&& '#submit_gender' && '#submit_religion'*/).on('click',function() {
+  	$(/*'#submit_age' */'#submit_gender'/* && '#submit_religion'*/).on('click',function() {
 
   		var error = 0;
   		var uage = $('#age').val();
-		//var ugender = $('#gender').val();
+		var ugender = $('#gender').val();
 		//var ureligion = $('#religion').val();
 
   		if(uage == "") {
@@ -128,12 +128,12 @@ $(function() {
   			error = 1;
   			errormsg = 'Please only letters (and no spaces)';
   		}  		
-		/*if(ugender == "") {
+		if(ugender == "") {
 			error = 1;
 			errormsg = 'Please state your gender';
 			ugender ='undefined';
 		}
-		if(ureligion == "") {
+		/*if(ureligion == "") {
 			error = 1;
 			errormsg = 'Please state your religion';
 			ureligion ='undefined';
