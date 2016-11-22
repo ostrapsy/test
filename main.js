@@ -112,14 +112,14 @@ $(function() {
 	$('#demo').show();
 
     
-  	$('#submit_age' /*'#submit_gender'/* && '#submit_religion'*/).on('click',function() {
+  	$('#submit_demo').on('click',function() {
 
   		var error = 0;
   		var uage = $('#age').val();
 		var ugender = $('#gender').val();
-		//var ureligion = $('#religion').val();
+		var ureligion = $('#religion').val();
 
-  		if(uage == "") {
+  		/*if(uage == "") {
   			error = 1;
   			errormsg = 'Please enter your age';
   			uage = "undefined";
@@ -141,7 +141,7 @@ $(function() {
 
   		if(error == 0) {
 			$('#demo').hide();
-			window.age = $('#age').val();
+			window.gender = $('#gender').val();
   			init_avatar();  			
   		} else {
   			alertify.log(errormsg,"error");
