@@ -116,7 +116,7 @@ $(function() {
 
   		var error = 0;
   		var uage = $('#age').val();
-		var ugender = $('#gender').val();
+		var ugender = $('#gender input[type='radio':checked).val();
 		var ureligion = $('#religion').val();
 
   		/*if(uage == "") {
@@ -128,7 +128,7 @@ $(function() {
   			error = 1;
   			errormsg = 'Please only letters (and no spaces)';
   		}  		*/
-		if(ugender == "") {
+		if(ugender == "male") {
 			error = 1;
 			errormsg = 'Please state your gender';
 			ugender ='undefined';
