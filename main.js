@@ -112,24 +112,36 @@ $(function() {
 	$('#demo').show();
 
     
-  	$('#submit_demo').on('click',function() {
+  	$('#submit_demo' '#submit_age' '#submit_religion').on('click',function() {
 
   		var error = 0;
-  		var uname = $('#userdemo').val();
+  		var uage = $('#age').val();
+		var ugender = $('#gender').val();
+		var ureligion = $('#religion').val();
 
-  		if(uname == "") {
+  		if(uage == "") {
   			error = 1;
-  			errormsg = 'Please enter text';
-  			uname = "undefined";
+  			errormsg = 'Please enter your age';
+  			uage = "undefined";
   		}
-  		if(not_alphanumeric(uname)) {
+  		if(isNaN(uage)) {
   			error = 1;
   			errormsg = 'Please only letters (and no spaces)';
   		}  		
+		if(ugender == "") {
+			error = 1;
+			errormsg = 'Please state your gender';
+			ugender ='undefined';
+		}
+		if(ureligion == "") {
+			error = 1;
+			errormsg = 'Please state your religion';
+			ureligion ='undefined';
+		}
 
   		if(error == 0) {
 			$('#demo').hide();
-			window.userdemo = $('#userdemo').val();
+			window.age = $('#age').val();
   			init_avatar();  			
   		} else {
   			alertify.log(errormsg,"error");
