@@ -116,7 +116,7 @@ $(function() {
 
   		var error = 0;
   		var uage = $('#age').val();
-		var ugender = $('#gender').val();
+		var ugender = $('#gender#id').val();
 		var ureligion = $('#religion').val();
 
   		/*if(uage == "") {
