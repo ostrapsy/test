@@ -107,6 +107,8 @@ $(function() {
   	});
   }
 
+	
+  // All the demographic data
 	  
   function init_demo() {
 
@@ -117,14 +119,7 @@ $(function() {
 
   		var error = 0;
   		var uage = $('#age').val();
-		//var ugender = $('#gender.gender:checked').val();
-		/*if ($('#genderForm.gender:checked').val() != null) {           
-		   var ugender = $('#genderForm.gender:checked').val();
-		} else if($('#genderForm.gender:checked').val() == null) {
-			error = 1;
-			errormsg = 'Please state your gender';
-			ugender ='undefined';
-		}*/
+		
 		if ($('input[name="gender"]:checked').val() != null) {           
 		   var ugender = $('input[name="gender"]:checked').val();
 		} else if($('input[name="gender"]:checked').val() == null) {
@@ -132,22 +127,13 @@ $(function() {
 			errormsg = 'Please state your gender';
 			ugender ='undefined';
 		}
-		//var ureligion = $('#religion').val();
 
   		if(uage == "") {
   			error = 1;
   			errormsg = 'Please enter your age';
   			uage = "undefined";
   		}
-  		/*if(isNaN(uage)) {
-  			error = 1;
-  			errormsg = 'Please only letters (and no spaces)';
-  		}  		*/
-		/*if(ugender == null) {
-			error = 1;
-			errormsg = 'Please state your gender';
-			ugender ='undefined';
-		}*/
+  		
 		if ($('input[name="religion"]:checked').val() != null) {           
 		   var ureligion = $('input[name="religion"]:checked').val();
 		} else if($('input[name="religion"]:checked').val() == null) {
