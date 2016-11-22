@@ -117,9 +117,8 @@ $(function() {
   		var error = 0;
   		var uage = $('#age').val();
 		//var ugender = $('#gender.gender:checked').val();
-		var ugender = null;
 		if ($('#gender.gender:checked').val() != null) {           
-		   ugender = $('#gender.gender:checked').val();
+		   var ugender = $('#gender.gender:checked').val();
 		}
 		var ureligion = $('#religion').val();
 
