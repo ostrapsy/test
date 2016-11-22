@@ -120,11 +120,10 @@ You can edit the instructions text for entering demo below.
 	<h3>Please enter your age, gender and religion</h3>
 	Please do it...<br><br>
 	Age: <input type="text" style="vertical-align: middle; margin: 0px;" id="age"  autocomplete="off" /><br>
-	<form action="">
- 	 <label for="female"><input type="radio" style="vertical-align: middle; margin: 0px;" id="gender" value="female">  Female</label>
- 	 	<label for="female"><input type="radio" style="vertical-align: middle; margin: 0px;" id="gender" value="male">  Male</label>
- 	 		<label for="female"><input type="radio" style="vertical-align: middle; margin: 0px;" id="gender" value="other">  Other</label>
-	<br><button type="submit"  id="submit_demo">Submit</button>
+	<form action="" id=gender>
+ 	 <label for="female"><input type="radio" style="vertical-align: middle; margin: 0px;" name="gender" value="female">  Female</label>
+ 	 	<label for="female"><input type="radio" style="vertical-align: middle; margin: 0px;" name="gender" value="male">  Male</label>
+ 	 		<label for="female"><input type="radio" style="vertical-align: middle; margin: 0px;" name="gender" value="other">  Other</label>
 	</form><br>
 
 	<form action="">
@@ -138,7 +137,7 @@ You can edit the instructions text for entering demo below.
 	</form><br>
 	
 	<br>	<br>
-	
+	<button type="submit"  id="submit_demo">Submit</button>
 </div>
 	
 <div id="text" style="display:none;" class="instr">	
