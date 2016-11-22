@@ -134,7 +134,7 @@ $(function() {
   			uage = "undefined";
   		}
   		
-		if(not_numeric(uage)) {
+		if(isNaN(uage)) {
   			error = 1;
   			errormsg = 'Please enter your age using only numbers';
   		}  
