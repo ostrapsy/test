@@ -117,6 +117,10 @@ $(function() {
   		var error = 0;
   		var uage = $('#age').val();
 		var ugender = $('#gender.gender:checked').val();
+		/*var ugender = 'none';
+		if ($('#gender.gender:checked').val() != null) {           
+		   ugender = $('#gender.gender:checked').val();
+		}*/
 		var ureligion = $('#religion').val();
 
   		if(uage == "") {
@@ -128,7 +132,7 @@ $(function() {
   			error = 1;
   			errormsg = 'Please only letters (and no spaces)';
   		}  		*/
-		if(ugender == null) {
+		if(ugender == 'none') {
 			error = 1;
 			errormsg = 'Please state your gender';
 			ugender ='undefined';
