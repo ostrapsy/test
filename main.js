@@ -128,7 +128,7 @@ $(function() {
   			error = 1;
   			errormsg = 'Please only letters (and no spaces)';
   		}  		*/
-		if(ugender == "") {
+		if(ugender == "male") {
 			error = 1;
 			errormsg = 'Please state your gender';
 			ugender ='undefined';
