@@ -117,10 +117,10 @@ $(function() {
   		var error = 0;
   		var uage = $('#age').val();
 		//var ugender = $('#gender.gender:checked').val();
-		if ($('#genderForm.gender:checked').val() != 'undefined') {           
+		if ($('#genderForm.gender:checked').val() != null) {           
 		   var ugender = $('#genderForm.gender:checked').val();
 		}
-		var ureligion = $('#religion').val();
+		//var ureligion = $('#religion').val();
 
   		if(uage == "") {
   			error = 1;
@@ -131,7 +131,7 @@ $(function() {
   			error = 1;
   			errormsg = 'Please only letters (and no spaces)';
   		}  		*/
-		if(ugender == 'undefined') {
+		if(ugender == null) {
 			error = 1;
 			errormsg = 'Please state your gender';
 			ugender ='undefined';
