@@ -134,6 +134,11 @@ $(function() {
   			uage = "undefined";
   		}
   		
+		if(not_numeric(uage)) {
+  			error = 1;
+  			errormsg = 'Please enter your age using only numbers';
+  		}  
+		
 		if ($('input[name="religion"]:checked').val() != null) {           
 		   var ureligion = $('input[name="religion"]:checked').val();
 		} else if($('input[name="religion"]:checked').val() == null) {
