@@ -112,7 +112,7 @@ $(function() {
 	$('#demo').show();
 
     
-  	$('#submit_demo' && '#submit_age' && '#submit_religion').on('click',function() {
+  	$('#submit_demo' /*&& '#submit_age' && '#submit_religion'*/).on('click',function() {
 
   		var error = 0;
   		var uage = $('#age').val();
