@@ -116,8 +116,8 @@ $(function() {
 
   		var error = 0;
   		var uage = $('#age').val();
-		var ugender = $('#gender').val();
-		var ureligion = $('#religion').val();
+		//var ugender = $('#gender').val();
+		//var ureligion = $('#religion').val();
 
   		if(uage == "") {
   			error = 1;
@@ -128,7 +128,7 @@ $(function() {
   			error = 1;
   			errormsg = 'Please only letters (and no spaces)';
   		}  		
-		if(ugender == "") {
+		/*if(ugender == "") {
 			error = 1;
 			errormsg = 'Please state your gender';
 			ugender ='undefined';
@@ -137,7 +137,7 @@ $(function() {
 			error = 1;
 			errormsg = 'Please state your religion';
 			ureligion ='undefined';
-		}
+		}*/
 
   		if(error == 0) {
 			$('#demo').hide();
