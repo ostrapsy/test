@@ -124,7 +124,7 @@ $(function() {
 		   var upolitic = $('input[name="politic"]:checked').val();
 		} else if($('input[name="politic"]:checked').val() == null) {
 			error = 1;
-			errormsg = 'Please state your politic';
+			errormsg = 'Please state your political placement';
 			upolitic ='undefined';
 		}
 		
