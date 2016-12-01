@@ -277,7 +277,7 @@ $(function() {
 			  "username": window.username,
 			  "userage": window.age,
 			  "usergender": window.gender,
-			  "userreligion": window.religion,
+			  "userpolitic": window.politic,
 			  "text": window.description,
 			  "likes": window.settings.condition_likes,
 			  "usernames": window.settings.likes_by
