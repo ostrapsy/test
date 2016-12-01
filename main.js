@@ -53,15 +53,15 @@ $(function() {
     // Usernames by which the participant will receive "likes"
 	// If group member names are changed, these should be changed accordingly.
     //var upolitic1 = $('input[name="politic"]:checked').val();
-    if ($('input[name="politic"]:checked').val() != "Right-wing") {           
+    if ($('input[name="politic"]:checked').val() == "Right-wing") {           
 	settings.likes_by = ['John','Mary','Lauren','Jane','Arjen'];
-    } else if($('input[name="politic"]:checked').val() != "Centre-right") {
+    } else if($('input[name="politic"]:checked').val() == "Centre-right") {
 	settings.likes_by = ['George','John','Mary','Lauren','Jane'];
-    } else if($('input[name="politic"]:checked').val() != "Centre") {
+    } else if($('input[name="politic"]:checked').val() == "Centre") {
 	settings.likes_by = ['George','Arjen','Ky','Nick','Sarah'];
-    } else if($('input[name="politic"]:checked').val() != "Centre-left") {
+    } else if($('input[name="politic"]:checked').val() == "Centre-left") {
 	settings.likes_by = ['George','AncaD','Sarah','Nick','Arjen'];
-    } else if($('input[name="politic"]:checked').val() != "Left-wing") {
+    } else if($('input[name="politic"]:checked').val() == "Left-wing") {
 	settings.likes_by = ['Ky','Heather','Nick','Arjen','AncaD'];
     }
 	  //settings.likes_by = ['George','AncaD','Sarah','Arjen','Jane','Nick','Dan','Heather','Ky'];
