@@ -35,7 +35,7 @@ window.others = {
         "username": "AncaD",
 	"userage": "32",
 	"usergender": "Female",
-	"userpolitic": "Left",
+	"userpolitic": "Left-wing",
         "text": "I am a Computer Science student, interested in Natural Language processing. Also a lover of loose leaf tea and a Semantic Web enthusiast. I am involved in a gorup called GeeksUnited, a programming group.",
         "likes": [10000, 12000, 40000, 80000, 120000] //5
       },
@@ -89,7 +89,7 @@ window.others = {
         "username": "Heather",
 	"userage": "21",
 	"usergender": "Female",
-	"userpolitic": "Left",
+	"userpolitic": "Left-wing",
         "text": "Just now I'm finishing up my first year of a difficult science curriculum in university. I am part of a student group there. I also work at a cosmetics counter as a part-time thing and earn some money online in my free time. I have a lot planned for my future, and it's really exciting. I want to grow up and be a doctor with a family of lots of little dogs. It'll be fantastic.",
         "likes": [13000, 50000, 80000, 88000, 120000] //5
       },
@@ -97,8 +97,8 @@ window.others = {
         "avatar": "avatars/others/jane.png",
         "username": "Jane",
 	"userage": "56",
-	"usergender": "Feale",
-	"userpolitic": "Right",
+	"usergender": "Female",
+	"userpolitic": "Right-wing",
         "text": "Dear all, my name is Jane and I will soon have an important interview. This is all I can think about these days. I hope youre doing well. Oh and for a group- I would say- my Ladies group",
         "likes": [10000, 15000, 24000, 50000] //6
       },
