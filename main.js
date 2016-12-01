@@ -120,12 +120,12 @@ $(function() {
   		var error = 0;
   		var uage = $('#age').val();
 		
-		if ($('input[name="religion"]:checked').val() != null) {           
-		   var ureligion = $('input[name="religion"]:checked').val();
-		} else if($('input[name="religion"]:checked').val() == null) {
+		if ($('input[name="politic"]:checked').val() != null) {           
+		   var upolitic = $('input[name="politic"]:checked').val();
+		} else if($('input[name="politic"]:checked').val() == null) {
 			error = 1;
-			errormsg = 'Please state your religion';
-			ureligion ='undefined';
+			errormsg = 'Please state your politic';
+			upolitic ='undefined';
 		}
 		
 		if ($('input[name="gender"]:checked').val() != null) {           
@@ -149,7 +149,7 @@ $(function() {
 			$('#demo').hide();
 			window.age = uage;
 			window.gender = ugender;
-			window.religion = ureligion;
+			window.politic = upolitic;
   			init_avatar();  			
   		} else {
   			alertify.log(errormsg,"error");
