@@ -38,8 +38,8 @@ $(function() {
     // In condition 1, the participant will receive 1 like at the following timepoint (in ms). Default: [12000, 9999999]
     settings.condition_1_likes = [12000, 9999999]; 
 
-    // In condition 2, user will receive 6 likes at the following timepoints (in ms). Default: [10000, 15000,35000,80000,1320000,150000]
-    settings.condition_2_likes = [10000, 15000,35000,80000,1320000,150000];  
+    // In condition 2, user will receive 5 likes at the following timepoints (in ms). Default: [10000, 15000,35000,80000,1320000,150000]
+    settings.condition_2_likes = [10000, 15000,35000,80000,150000];  
     
     // In condition 3, user will receive 9 likes at the following timepoints (in ms). Default: [10000, 11000,15000,35000,80000,100000,110000,150000,20000]
     settings.condition_3_likes = [10000, 11000,15000,35000,80000,100000,110000,150000,20000]; 
@@ -52,7 +52,19 @@ $(function() {
 	
     // Usernames by which the participant will receive "likes"
 	// If group member names are changed, these should be changed accordingly.
-    settings.likes_by = ['George','AncaD','Sarah','Arjen','Jane','Nick','Dan','Heather','Ky']; 
+    //var upolitic1 = $('input[name="politic"]:checked').val();
+    if ($('input[name="politic"]:checked').val() != "Right-wing") {           
+	settings.likes_by = ['John','Mary','Lauren','Jane','Arjen'];
+    } else if($('input[name="politic"]:checked').val() != "Centre-right") {
+	settings.likes_by = ['George','John','Mary','Lauren','Jane'];
+    } else if($('input[name="politic"]:checked').val() != "Centre") {
+	settings.likes_by = ['George','Arjen','Ky','Nick','Sarah'];
+    } else if($('input[name="politic"]:checked').val() != "Centre-left") {
+	settings.likes_by = ['George','AncaD','Sarah','Nick','Arjen'];
+    } else if($('input[name="politic"]:checked').val() != "Left-wing") {
+	settings.likes_by = ['Ky','Heather','Nick','Arjen','AncaD'];
+    }
+	  //settings.likes_by = ['George','AncaD','Sarah','Arjen','Jane','Nick','Dan','Heather','Ky'];
   }
   
   // -------------------
@@ -421,16 +433,16 @@ $(function() {
 	// in addition, the number of likes another person receives is adjusted, so that there is the same number of likes overall
 	switch(condition) {
 		case 1:
-			window.settings.condition_likes = settings.condition_1_likes;
-			window.others.posts[1].likes = settings.condition_1_adjusted_likes;
+			window.settings.condition_likes = settings.condition_2_likes;
+			window.others.posts[1].likes = settings.condition_2_adjusted_likes;
 			break;
 		case 2:
 			window.settings.condition_likes = settings.condition_2_likes;
 			window.others.posts[1].likes = settings.condition_2_adjusted_likes;
 			break;
 		case 3:
-			window.settings.condition_likes = settings.condition_3_likes;
-			window.others.posts[1].likes = settings.condition_3_adjusted_likes;
+			window.settings.condition_likes = settings.condition_2_likes;
+			window.others.posts[1].likes = settings.condition_2_adjusted_likes;
 			break;
 	}	
 	  
