@@ -8,64 +8,7 @@ $(function() {
   // **Parameters**
   // ------------
   
-  function set_settings() {
-    window.settings = [];
-	
-	// **Number** **of** **Avatar** **Images**   
-	// Number of avatars the user can choose from. Can be changed to any number, depending on how many avatars you would like to display. Default: 82
-	// The avatar images used in the online preview of the paradigm were created using by pickaface.net and due to their terms not available for redistribution. You should therefore create your own images. All images should be 250x250 pixels in size and carry the names "avatar_NUMBER.png" (e.g. avatar_1.png; "png" should be lower case; the numbers in the names should be consequtive, starting from 1). The number of avatars dependeds on the corresponding parameter. The images should be placed in folder "avatars," located in the main study folder extracted on your computer or server.
-
-    settings.numberofavatars = 40;
-
-	
-    // **Redirection**    
-	// After the introduction task is over participants should be redirected to a survey with manipulation checks and dependent measures, to subsequent tasks, or to further instructions. 
-	// If the study is called with a parameter for redirection, as explained in the documentation, this value is overwritten. 
-	// To the redirect link, the following information will be appended: (1) participant number, (2) condition, (3) username, (4) description submitted by participant. These variables can be extracted from the link, saved as data, and used for linking the Social Media Ostracism paradigm to subsequent tasks and measures. See documentation for more details.
-
-    settings.defaultredirect = 'https://newqtrial2015az1.az1.qualtrics.com/SE/?SID=SV_6Lv1bs4HXcpMtNP';
-
-	
-	// **Tasklength**     
-    // Length of the group introduction task in milliseconds. Can be changed to any number (in ms). Default: 180000 (3min) 
-    settings.tasklength = 180000; 
-
-	
-	// **Number** **of** **"likes"**    
-    // Each received "like" is indicated by the timepoint (in ms) at which the "like" will appear. To change the number of "likes" in each condition, add or remove timepoints. Make sure that every timepoint (except the first) is preceded by a single comma. 
-	// In cases with only 1 "like," a second "like" is added with time point 9999999. This "like" is added for programming purposes and is never executed, as it is outside the task time
-
-    // In condition 1, the participant will receive 1 like at the following timepoint (in ms). Default: [12000, 9999999]
-    settings.condition_1_likes = [12000, 9999999]; 
-
-    // In condition 2, user will receive 5 likes at the following timepoints (in ms). Default: [10000, 15000,35000,80000,1320000,150000]
-    settings.condition_2_likes = [10000, 15000,35000,80000,150000];  
-    
-    // In condition 3, user will receive 9 likes at the following timepoints (in ms). Default: [10000, 11000,15000,35000,80000,100000,110000,150000,20000]
-    settings.condition_3_likes = [10000, 11000,15000,35000,80000,100000,110000,150000,20000]; 
-
-	// **Others' likes**     
-	// To keep the total distribution of "likes" constant across conditions, The "likes" received by one group member can be adjusted according to the participant's. By default, the other group member receives 9 "likes" in the participant-ostracism condition, 5 in the participant-inclusion condtion, and 1 in the participant-overinclusion condtion.
-	settings.condition_1_adjusted_likes = [12000, 14000,15000,35000,80000,100000,110000,150000,20000]; // 9
-	settings.condition_2_adjusted_likes = [12000, 14000,15000,35000,80000]; // 5
-	settings.condition_3_adjusted_likes = [12000, 9999999]; //1	
-	
-    // Usernames by which the participant will receive "likes"
-	// If group member names are changed, these should be changed accordingly.
-    //var upolitic1 = $('input[name="politic"]:checked').val();
-    if ($('input[name="politic"]:checked').val() == "Right-wing") {           
-	settings.likes_by = ['John','Mary','Lauren','Jane','Arjen'];
-    } else if($('input[name="politic"]:checked').val() == "Centre-right") {
-	settings.likes_by = ['George','John','Mary','Lauren','Jane'];
-    } else if($('input[name="politic"]:checked').val() == "Centre") {
-	settings.likes_by = ['George','Arjen','Ky','Nick','Sarah'];
-    } else if($('input[name="politic"]:checked').val() == "Centre-left") {
-	settings.likes_by = ['George','AncaD','Sarah','Nick','Arjen'];
-    } else if($('input[name="politic"]:checked').val() == "Left-wing") {
-	settings.likes_by = ['Ky','Heather','Nick','Arjen','AncaD'];
-    }
-	  //settings.likes_by = ['George','AncaD','Sarah','Arjen','Jane','Nick','Dan','Heather','Ky'];
-  }
+  
   
   // -------------------
   // Above were the basic parameters you can adjust using the instructions. The remaining code is also annotated, but we do not recommend changing it, unless you are comfortable with web programming.
@@ -425,7 +368,65 @@ $(function() {
 
   }
   
-  
+  function set_settings() {
+    window.settings = [];
+	
+	// **Number** **of** **Avatar** **Images**   
+	// Number of avatars the user can choose from. Can be changed to any number, depending on how many avatars you would like to display. Default: 82
+	// The avatar images used in the online preview of the paradigm were created using by pickaface.net and due to their terms not available for redistribution. You should therefore create your own images. All images should be 250x250 pixels in size and carry the names "avatar_NUMBER.png" (e.g. avatar_1.png; "png" should be lower case; the numbers in the names should be consequtive, starting from 1). The number of avatars dependeds on the corresponding parameter. The images should be placed in folder "avatars," located in the main study folder extracted on your computer or server.
+
+    settings.numberofavatars = 40;
+
+	
+    // **Redirection**    
+	// After the introduction task is over participants should be redirected to a survey with manipulation checks and dependent measures, to subsequent tasks, or to further instructions. 
+	// If the study is called with a parameter for redirection, as explained in the documentation, this value is overwritten. 
+	// To the redirect link, the following information will be appended: (1) participant number, (2) condition, (3) username, (4) description submitted by participant. These variables can be extracted from the link, saved as data, and used for linking the Social Media Ostracism paradigm to subsequent tasks and measures. See documentation for more details.
+
+    settings.defaultredirect = 'https://newqtrial2015az1.az1.qualtrics.com/SE/?SID=SV_6Lv1bs4HXcpMtNP';
+
+	
+	// **Tasklength**     
+    // Length of the group introduction task in milliseconds. Can be changed to any number (in ms). Default: 180000 (3min) 
+    settings.tasklength = 180000; 
+
+	
+	// **Number** **of** **"likes"**    
+    // Each received "like" is indicated by the timepoint (in ms) at which the "like" will appear. To change the number of "likes" in each condition, add or remove timepoints. Make sure that every timepoint (except the first) is preceded by a single comma. 
+	// In cases with only 1 "like," a second "like" is added with time point 9999999. This "like" is added for programming purposes and is never executed, as it is outside the task time
+
+    // In condition 1, the participant will receive 1 like at the following timepoint (in ms). Default: [12000, 9999999]
+    settings.condition_1_likes = [12000, 9999999]; 
+
+    // In condition 2, user will receive 5 likes at the following timepoints (in ms). Default: [10000, 15000,35000,80000,1320000,150000]
+    settings.condition_2_likes = [10000, 15000,35000,80000,150000];  
+    
+    // In condition 3, user will receive 9 likes at the following timepoints (in ms). Default: [10000, 11000,15000,35000,80000,100000,110000,150000,20000]
+    settings.condition_3_likes = [10000, 11000,15000,35000,80000,100000,110000,150000,20000]; 
+
+	// **Others' likes**     
+	// To keep the total distribution of "likes" constant across conditions, The "likes" received by one group member can be adjusted according to the participant's. By default, the other group member receives 9 "likes" in the participant-ostracism condition, 5 in the participant-inclusion condtion, and 1 in the participant-overinclusion condtion.
+	settings.condition_1_adjusted_likes = [12000, 14000,15000,35000,80000,100000,110000,150000,20000]; // 9
+	settings.condition_2_adjusted_likes = [12000, 14000,15000,35000,80000]; // 5
+	settings.condition_3_adjusted_likes = [12000, 9999999]; //1	
+	
+    // Usernames by which the participant will receive "likes"
+	// If group member names are changed, these should be changed accordingly.
+    //var upolitic1 = $('input[name="politic"]:checked').val();
+    if ($('input[name="politic"]:checked').val() == "Right-wing") {           
+	settings.likes_by = ['John','Mary','Lauren','Jane','Arjen'];
+    } else if($('input[name="politic"]:checked').val() == "Centre-right") {
+	settings.likes_by = ['George','John','Mary','Lauren','Jane'];
+    } else if($('input[name="politic"]:checked').val() == "Centre") {
+	settings.likes_by = ['George','Arjen','Ky','Nick','Sarah'];
+    } else if($('input[name="politic"]:checked').val() == "Centre-left") {
+	settings.likes_by = ['George','AncaD','Sarah','Nick','Arjen'];
+    } else if($('input[name="politic"]:checked').val() == "Left-wing") {
+	settings.likes_by = ['Ky','Heather','Nick','Arjen','AncaD'];
+    }
+	  //settings.likes_by = ['George','AncaD','Sarah','Arjen','Jane','Nick','Dan','Heather','Ky'];
+  }
+	
   // adjustments according to current condition
   function adjust_to_condition() {
 
