@@ -280,14 +280,7 @@ $(function() {
   
   // **Slide:** **Task**   
   function init_task() {
-    Random ran = new Random();
-    int x = ran.nextInt(0) + 1;
-    if (x == 0) {
-	    a = wondow.others;
-    } else if (x == 1) {
-	    a = window.others2;
-    }
-
+    
     $('#task').show();
 
 	shortcut.add("Backspace",function() {});      
@@ -320,12 +313,12 @@ $(function() {
 	  $("#task").append(html);
 	  
     // Add other boxes to slide    
-	  var tpl = $('#otherstmp').html(),html = Mustache.to_html(tpl, a);
+	  var tpl = $('#otherstmp').html(),html = Mustache.to_html(tpl, others);
 	  $("#task").append(html);
  
     // Randomize order of other players boxes
     function reorder() {
-       var grp = $("#a").children();
+       var grp = $("#others").children();
        var cnt = grp.length;
 
        var temp,x;
@@ -336,7 +329,7 @@ $(function() {
          grp[x] = temp;
      }
      $(grp).remove();
-     $("#a").append($(grp));
+     $("#others").append($(grp));
     }
     reorder();    
 
