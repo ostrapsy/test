@@ -283,9 +283,9 @@ $(function() {
     Random ran = new Random();
     int x = ran.nextInt(0) + 1;
     if (x == 0) {
-	    a = others;
+	    a = wondow.others;
     } else if (x == 1) {
-	    a = others2;
+	    a = window.others2;
     }
 
     $('#task').show();
