@@ -325,7 +325,7 @@ $(function() {
  
     // Randomize order of other players boxes
     function reorder() {
-       var grp = $("#others").children();
+       var grp = $("#a").children();
        var cnt = grp.length;
 
        var temp,x;
@@ -336,7 +336,7 @@ $(function() {
          grp[x] = temp;
      }
      $(grp).remove();
-     $("#others").append($(grp));
+     $("#a").append($(grp));
     }
     reorder();    
 
