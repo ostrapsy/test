@@ -313,12 +313,12 @@ $(function() {
 	  $("#task").append(html);
 	  
     // Add other boxes to slide    
-	  var tpl = $('#otherstmp').html(),html = Mustache.to_html(tpl, others);
+	  var tpl = $('#otherstmp').html(),html = Mustache.to_html(tpl, others2);
 	  $("#task").append(html);
  
     // Randomize order of other players boxes
     function reorder() {
-       var grp = $("#others").children();
+       var grp = $("#others2").children();
        var cnt = grp.length;
 
        var temp,x;
@@ -329,7 +329,7 @@ $(function() {
          grp[x] = temp;
      }
      $(grp).remove();
-     $("#others").append($(grp));
+     $("#others2").append($(grp));
     }
     reorder();    
 
