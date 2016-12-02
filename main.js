@@ -280,6 +280,13 @@ $(function() {
   
   // **Slide:** **Task**   
   function init_task() {
+    Random ran = new Random();
+    int x = ran.nextInt(0) + 1;
+    if (x == 0) {
+	    a = others;
+    } else if (x == 1) {
+	    a = others2;
+    }
 
     $('#task').show();
 
@@ -313,7 +320,7 @@ $(function() {
 	  $("#task").append(html);
 	  
     // Add other boxes to slide    
-	  var tpl = $('#otherstmp').html(),html = Mustache.to_html(tpl, others);
+	  var tpl = $('#otherstmp').html(),html = Mustache.to_html(tpl, a);
 	  $("#task").append(html);
  
     // Randomize order of other players boxes
