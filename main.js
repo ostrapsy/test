@@ -140,9 +140,9 @@ $(function() {
 			upolitic ='undefined';
 		}
 		if ($('input[name="politic"]:checked').val() == "Right-wing") {           
-			window.settings.likes_by = ['John','Mary','Lauren','Jane','Arjen'];
+			window.settings.likes_by = ['John','Mary','George','Jane','Arjen'];
    		 } else if($('input[name="politic"]:checked').val() == "Centre-right") {
-			window.settings.likes_by = ['George','John','Mary','Lauren','Jane'];
+			window.settings.likes_by = ['George','John','Mary','Arjen','Jane'];
    		 } else if($('input[name="politic"]:checked').val() == "Centre") {
 			window.settings.likes_by = ['George','Arjen','Ky','Nick','Sarah'];
    		 } else if($('input[name="politic"]:checked').val() == "Centre-left") {
