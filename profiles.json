@@ -62,7 +62,7 @@ window.others = {
         "username": "Lauren",
 	"userage": "24",
 	"usergender": "Female",
-	"userpolitic": "Centre-right",
+	"userpolitic": "Centre",
         "text": "I’m Lauren, I love to hang out with friends and go shopping. Just doing some online studies here!",
         "likes": [12000, 20000, 22000, 38000] //1
       },
@@ -80,7 +80,7 @@ window.others = {
         "username": "Arjen",
 	"userage": "32",
 	"usergender": "Male",
-	"userpolitic": "Centre",
+	"userpolitic": "Centre-right",
         "text": "My name is Arjen, I study Artificial Intelligence. I am not really a member of any group. I like to use my free time to make all kinds of different things... Im kind of a nerd too, I guess.",
         "likes": [12000, 40000, 120000] //3
       },
