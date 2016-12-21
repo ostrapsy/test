@@ -276,9 +276,10 @@ span.cntr.label.label-info {
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
-    position: relative;
+    position: absolute;
     z-index: 1;
-    background-color: #f9f9f9;
+    background-color: #f5f6fa;
+    border: 1px solid #d5d7e0;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
@@ -286,7 +287,7 @@ span.cntr.label.label-info {
 /* Links inside the dropdown */
 .dropdown-content a {
     color: black;
-    padding: 6px 8px;
+    padding: 6px 16px;
     text-decoration: none;
     display: block;
 }
