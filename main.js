@@ -397,7 +397,7 @@ $(function() {
      		document.getElementById("myDropdown").classList.toggle("show");
   	  
 	  	window.onclick = function(event) {
-  			if (!event.target.matches('.dropbtn')) {
+  			if (!event.target.matches('.btn-share')) {
 
     				var dropdowns = document.getElementsByClassName("dropdown-content");
     				var i;
