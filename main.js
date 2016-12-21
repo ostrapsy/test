@@ -383,26 +383,7 @@ $(function() {
 		  itemSelector : '.entry',
 		  columnWidth : 10
 		});
-   /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('btn-share')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
+   
 
     // Redirect, default after 180000ms = 180s = 3min
     setTimeout(function() {
@@ -423,6 +404,27 @@ window.onclick = function(event) {
     },window.settings.tasklength); // timing for task
 
   }
+	
+ /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+ function myFunction() {
+     document.getElementById("myDropdown").classList.toggle("show");
+ }
+
+// Close the dropdown menu if the user clicks outside of it
+ window.onclick = function(event) {
+   if (!event.target.matches('btn-share')) {
+
+     var dropdowns = document.getElementsByClassName("dropdown-content");
+     var i;
+     for (i = 0; i < dropdowns.length; i++) {
+       var openDropdown = dropdowns[i];
+       if (openDropdown.classList.contains('show')) {
+         openDropdown.classList.remove('show');
+       }
+     }
+   }
+ }
 	
 
   // Get URL parameters to set condition number and participant number
