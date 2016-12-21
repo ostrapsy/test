@@ -270,6 +270,7 @@ span.cntr.label.label-info {
 .dropdown {
     position: absolute;
     display: inline-block;
+    z-index: 1;
 }
 
 /* Dropdown Content (Hidden by Default) */
