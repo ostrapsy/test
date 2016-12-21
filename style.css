@@ -247,6 +247,11 @@ span.cntr.label.label-info {
 }
 
 /* Dropdown Button */
+.btn-share {
+    padding: 0;
+	margin-top: -2px;
+}
+
 .dropbtn {
     background-color: #4CAF50;
     color: white;
