@@ -280,7 +280,7 @@ span.cntr.label.label-info {
     z-index: 1;
     background-color: #f5f6fa;
     border: 1px solid #d5d7e0;
-    min-width: 60px;
+    max-width: 60px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
