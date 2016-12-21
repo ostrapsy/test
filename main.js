@@ -74,6 +74,9 @@ $(function() {
   
   // **Slide:** **Intro**     
   // With instructions regarding the task. The intro container is shown, the continue calls the next slide when clicked.
+  function myFunction() {
+     document.getElementById("myDropdown").classList.toggle("show");
+  }
   function init_intro() {
   	$('#intro').show();
   	$('#submit_intro').on('click',function() {
@@ -280,9 +283,6 @@ $(function() {
   
   // **Slide:** **Task**   
   function init_task() {
-    function myFunction() {
-     document.getElementById("myDropdown").classList.toggle("show");
- }
 
 /*// Close the dropdown menu if the user clicks outside of it
  window.onclick = function(event) {
