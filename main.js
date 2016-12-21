@@ -74,9 +74,7 @@ $(function() {
   
   // **Slide:** **Intro**     
   // With instructions regarding the task. The intro container is shown, the continue calls the next slide when clicked.
-  function myFunction() {
-     document.getElementById("myDropdown").classList.toggle("show");
-  }
+  
   function init_intro() {
   	$('#intro').show();
   	$('#submit_intro').on('click',function() {
@@ -394,7 +392,10 @@ $(function() {
       // Like buttons can only be clicked once
 		  $(this).attr("disabled", true);
 	  });
-
+		// CLicker share-button
+	  $('.btn-share').on('click', function() {
+     		document.getElementById("myDropdown").classList.toggle("show");
+  	  });
     // Initalize Masonry plugin
     // For display of user and other players boxes in columns without gaps
 		$('#task').masonry({
