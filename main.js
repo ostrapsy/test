@@ -409,6 +409,7 @@ $(function() {
 	$('#after_task').show();
   	$('#submit_after_task').on('click',function() {
 		$('#after_task').hide();
+	});
   }
 	
 
