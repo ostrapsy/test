@@ -438,7 +438,6 @@ $(function() {
 	$('#continue').show();
   	$('#submit_continue').on('click',function() {
 		$('#continue').hide();
-  		init_profiles();
   }
 	
 
