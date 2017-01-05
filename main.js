@@ -412,7 +412,7 @@ $(function() {
 
     $('#timer').text('00:00');
     
-    $('#continue').on('click', init_continue());
+    $('#continue').on('click', init_after_task());
     
     },window.settings.tasklength); // timing for task
 
@@ -420,9 +420,9 @@ $(function() {
 	
   function init_continue() {
 
-	$('#continue').show();
-  	$('#submit_continue').on('click',function() {
-		$('#continue').hide();
+	$('#after_task').show();
+  	$('#submit_after_task').on('click',function() {
+		$('#after_task').hide();
   }
 	
 
