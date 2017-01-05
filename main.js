@@ -68,7 +68,15 @@ $(function() {
   			init_name();  			
   	});	
   }
-  
+	
+  function init_after_task() {
+
+	$('#after_task').show();
+  	$('#submit_after_task').on('click',function() {
+		$('#task').hide();
+		init_intro();
+	});
+  }
 
   // **Slide:** **Username**       
   // Note: Only alphanumeric usernames without spaces are accepted
@@ -402,15 +410,6 @@ $(function() {
     
     },window.settings.tasklength); // timing for task
 
-  }
-	
-  function init_after_task() {
-
-	$('#after_task').show();
-  	$('#submit_after_task').on('click',function() {
-		$('#task').hide();
-		init_intro();
-	});
   }
 	
 
