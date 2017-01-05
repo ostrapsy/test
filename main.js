@@ -74,7 +74,15 @@ $(function() {
 	$('#after_task').show();
   	$('#submit_after_task').on('click',function() {
 		$('#after_task').hide();
-		init_intro();
+		init_profiles();
+	});
+  }
+	
+  function init_profiles() {
+	  
+	  $('#profiles').show();
+	  $('#submit_after_profiles').on('click',function() {
+		window.location="https://www.google.com";
 	});
   }
 
