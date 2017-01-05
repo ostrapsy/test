@@ -49,7 +49,7 @@ $(function() {
 	settings.condition_2_adjusted_likes = [12000, 14000,15000,35000,80000]; // 5
 	settings.condition_3_adjusted_likes = [12000, 9999999]; //1	
 	
-
+	settings.likes_by = ['George','AncaD','Sarah','Arjen','Jane','Nick','Dan','Heather','Ky'];
   }
   
   
@@ -134,7 +134,7 @@ $(function() {
 			errormsg = 'Please state your political placement';
 			upolitic ='undefined';
 		}
-		if ($('input[name="politic"]:checked').val() == "Right-wing") {           
+		/*if ($('input[name="politic"]:checked').val() == "Right-wing") {           
 			window.settings.likes_by = ['John','Mary','George','Jane','Arjen'];
    		 } else if($('input[name="politic"]:checked').val() == "Centre-right") {
 			window.settings.likes_by = ['George','John','Mary','Arjen','Jane'];
@@ -144,7 +144,7 @@ $(function() {
 			window.settings.likes_by = ['George','AncaD','Sarah','Nick','Arjen'];
   		  } else if($('input[name="politic"]:checked').val() == "Left-wing") {
 			window.settings.likes_by = ['Ky','Heather','Nick','Arjen','AncaD'];
-   		 }
+   		 }*/
 		
 		if ($('input[name="gender"]:checked').val() != null) {           
 		   var ugender = $('input[name="gender"]:checked').val();
