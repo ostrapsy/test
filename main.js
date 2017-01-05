@@ -423,11 +423,11 @@ $(function() {
     
     $(window).unbind('beforeunload');
     
-    $('#final-continue').show();
+    $('#continue').show();
 
     $('#timer').text('00:00');
     
-    $('#final-continue').on('click', init_continue());
+    $('#continue').on('click', init_continue());
     
     },window.settings.tasklength); // timing for task
 
