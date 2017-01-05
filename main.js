@@ -73,7 +73,7 @@ $(function() {
 
 	$('#after_task').show();
   	$('#submit_after_task').on('click',function() {
-		$('#task').hide();
+		$('#after_task').hide();
 		init_intro();
 	});
   }
@@ -406,7 +406,10 @@ $(function() {
 
     $('#timer').text('00:00');
     
-    $('#continue').on('click', init_after_task());
+    $('#continue').on('click',function() {
+			$('#task').hide();
+  			init_after_task();
+    });
     
     },window.settings.tasklength); // timing for task
 
