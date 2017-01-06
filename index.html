@@ -117,7 +117,7 @@ You can edit the instructions text. The text "Your choice of avatar will not be 
 You can edit the instructions text for entering demo below.
 */ 
 -->
-	<h3>Please enter some more infofmation about yourself</h3>
+	<h3>Please enter some more information about yourself</h3>
 	This information will be visible to the other participants<br><br>
 	<b>Age:</b>  <input type="text" size="3" maxlength="3" style="vertical-align: middle; margin: 0px; width: 50px;" id="age"  autocomplete="off" /><br><br>
 	<b>Gender:</b><br>
@@ -211,7 +211,17 @@ You can edit the instructions text. The prompt to try and form an impression of 
 	
 <div id="profiles" style="display:none;" class="instr">
 	<h3>Full profiles</h3>
-	
+	<div class="entry">
+    	<div class="tophalf">
+
+    	<img src="{{avatar}}" class="avatar">
+        <h3>{{username}}</h3>
+    	
+    	<div class="main">
+
+		<p><b>Age:    {{userage}}<br>Gender:    {{usergender}}<br>Politics:    {{userpolitic}}</b></p>
+    		
+    	</div>
 </div>
 <!-- 
 /* 
