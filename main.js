@@ -70,7 +70,11 @@ $(function() {
 	$('#after_task').show();
   	$('#submit_after_task').on('click',function() {
 		$('#after_task').hide();
+		if (cond == 1) {
 		init_profiles();
+		} else if (cond == 2) {
+		init_profiles();
+		}
 	});
   }
 	
@@ -454,10 +458,12 @@ $(function() {
 		case 1:
 			window.settings.condition_likes = settings.condition_1_likes;
 			window.others.posts[1].likes = settings.condition_1_adjusted_likes;
+			var cond = 1;
 			break;
 		case 2:
 			window.settings.condition_likes = settings.condition_2_likes;
 			window.others.posts[2].likes = settings.condition_2_adjusted_likes;
+			var cond = 2;
 			break;
 	}	
 	  
