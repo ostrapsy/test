@@ -1,62 +1,30 @@
-@import "compass/css3";
-
-$radio-button-color:#5dc755;
-
-input[type="radio"] {
--webkit-appearance: none;
-}
-.row.collapse.foundation-radio-button-row {
-  margin-bottom:1rem; //to get the vert/horz center trick to work well, I have to remove the button margin, so I add it to the row instead.
-}
-.foundation-radio-button {
-  
-  position:relative;
-  border-right:1px solid white;
-  
-  input.button {
-    background:$radio-button-color;
-    &:hover {
-      background:darken($radio-button-color, 5%);
-    }
-    margin-bottom:0;
-    padding:1.25em;
-    
-    &[type="radio"]:checked {
-      background:darken($radio-button-color, 10%);
-    }
-    
-    + label {
-      font-size:1rem;
-      color: white;
-      position:absolute;
-      top:50%;;
-      left:50%;
-      display:inline-block;
-      width:auto;
-      transform:translate(-50%, -50%);
-    }
-  }
+/*
+  Hide radio button (the round disc)
+  we will use just the label to create pushbutton effect
+*/
+input[type=radio] {
+    display:none; 
+    margin:10px;
 }
 
-//Unrelated demo stuff
-html, body {
-  height:100%;
-  .demo {
-    position:absolute;
-    width:100%;
-    top:50%;
-    transform:translateY(-50%);
-  }
-  text-align:center;
+/*
+  Change the look'n'feel of labels (which are adjacent to radiobuttons).
+  Add some margin, padding to label
+*/
+input[type=radio] + label {
+    display:inline-block;
+    margin:-2px;
+    padding: 4px 12px;
+    background-color: #e7e7e7;
+    border-color: #ddd;
 }
-
-.panel {
-  margin-top:1rem;
-  border-radius:10px;
-  .subheader {
-    font-weight:700;
-    color:lighten(#222222, 50%);
-  }
+/*
+ Change background color for label next to checked radio button
+ to make it look like highlighted button
+*/
+input[type=radio]:checked + label { 
+   background-image: none;
+    background-color:#d0d0d0;
 }
 
 body { 
