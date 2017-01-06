@@ -2,7 +2,7 @@
 // ------------
 // In this document you will find instructions on how to adjust different parameters of the paradigm. You can apply the desired changes to the document main.js on your computer or server, using a source code editor.
 // The following parameters are necessary to adjust: number of avatar images, and the redirect link at the end of the study. All other parameters have a default option and adjustments are optional.
-$(document).foundation();
+
 $(function() {
 
   // **Parameters**
