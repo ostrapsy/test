@@ -37,6 +37,7 @@ If you don't have experience with programming, it is important that you alter on
 <script src="main.js"></script>
 <script type="text/javascript" src="profiles.json"></script>
 <script type="text/javascript" src="profiles2.json"></script>
+<script type="text/javascript" src="profiles3.json"></script>
 <script type=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js></script>
 
 </head>
@@ -209,7 +210,11 @@ You can edit the instructions text. The prompt to try and form an impression of 
 	You will now be able to view the full profile of the users who showed interest in you.<br><br>
 	<button type="submit"  id="submit_after_task">Continue</button>
 </div>
-	
+<!---
+/*
+De två divsen nedan är för after task
+*/
+--->
 <div id="profiles" style="display:none;">
 	<h3>Full profiles</h3>
 	<script type="template/text" id="newtmp">
@@ -221,11 +226,36 @@ You can edit the instructions text. The prompt to try and form an impression of 
         <h3>{{username}}</h3>
     	
     	<div class="main">
-
 		<p><b>Age:    {{userage}}<br>Gender:    {{usergender}}<br>Politics:    {{userpolitic}}</b></p>
-    		<div class="main1">
-			<p>{{text}}</p>
-		</div>
+		<p>{{text}}</p>
+    	</div>
+	
+	
+    	<br style="clear:both;">
+
+    </div>	
+
+    <div class="bottomhalf">
+    </div>
+
+    </div>
+  {{/posts1}}  
+</script>
+</div>
+	
+<div id="profiles2" style="display:none;">
+	<h3>Full profiles</h3>
+	<script type="template/text" id="newtmp">
+  {{#posts2}}
+    <div class="entry">
+    <div class="tophalf">
+
+    	<img src="{{avatar}}" class="avatar">
+        <h3>{{username}}</h3>
+    	
+    	<div class="main">
+		<p><b>Age:    {{userage}}<br>Gender:    {{usergender}}<br>Politics:    {{userpolitic}}</b></p>
+		<p>{{text}}</p>
     	</div>
 	
 	
