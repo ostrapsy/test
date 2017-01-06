@@ -40,7 +40,7 @@ input[type=radio] {
 
 	input[type=radio] + label {
 		display:inline-block;
-		margin:-2px;
+		margin:2px;
 		padding: 4px 12px;
 		margin-bottom: 0;
 		font-size: 14px;
