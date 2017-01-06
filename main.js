@@ -75,7 +75,7 @@ $(function() {
 		if (cond == 1) {
 		init_profiles();
 		} else if (cond == 2) {
-		init_profiles();
+		init_profiles2();
 		}
 	});
   }
@@ -90,7 +90,7 @@ $(function() {
 	});
   }
 	
-  function init_profiles() {
+  function init_profiles2() {
 	  
 	  $('#profiles2').show();
 	  var tpl = $('#newtmp').html(),html = Mustache.to_html(tpl, others3);
