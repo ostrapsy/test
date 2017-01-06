@@ -20,7 +20,7 @@ input[type=radio] + label {
     margin: 2px;
     padding: 4px 12px;
     background-color: #8bc9e8;
-    border: 2px solid;
+    
     border-color: #f5f6fa;
 }
 /*
