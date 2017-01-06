@@ -1,3 +1,7 @@
+div + p {
+     color: red;
+} 
+
 /*
   Hide radio button (the round disc)
   we will use just the label to create pushbutton effect
