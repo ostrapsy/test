@@ -77,6 +77,11 @@ input[type=radio] {
 			background-color:#e0e0e0;
 	}
 /*
+Här bygger jag boxarna för profilerna efter tasken
+*/
+
+
+/*
 Här börjar orginalskriptet OBS!
 */
 body { 
@@ -99,20 +104,8 @@ body {
 	float: left;
 	margin: 10px;
 }
-/*
-Nästa två "funktioner" är för after task
-*/
-div.main1 {
-  width: 510px !important;
-  margin-left: -16px;
-  margin-top: 3px;
-	margin-bottom: -10px !important;
-}
-.entry1 {
-	width: 540px;
-	float: left;
-	margin: 10px;
-}
+
+
 
 div.main {
   width: 210px !important;
