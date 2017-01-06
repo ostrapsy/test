@@ -212,36 +212,29 @@ You can edit the instructions text. The prompt to try and form an impression of 
 <div id="profiles" style="display:none;">
 	<h3>Full profiles</h3>
 	<script type="template/text" id="newtmp">
-	<div class="entry1">
-	<div class="tophalf">
-		<img="avatars/others/george.png">
-		<h3>George</h3>
-		<div class="main1">
-	
-		<p><b>Age: 12<br>Gender: Male<br>Politics: Nazi</b></p>
-    		<p>Hej jag heter George!</P>
-    		</div>
-		<div class="bottomhalf">
-		</div>
-    		<br style="clear:both;">
+  {{#posts1}}
+    <div class="entry">
+    <div class="tophalf">
 
-    	</div><br>
-	</div>
-	<div class="entry1">
-	<div class="tophalf">
-		<img src="{{avatar}}" class="avatar">
-		<h3>Greta</h3>
-		<div class="main1">
-	
-		<p><b>Age: 23<br>Gender: Female<br>Politics: Stalinist</b></p>
+    	<img src="{{avatar}}" class="avatar">
+        <h3>{{username}}</h3>
+    	
+    	<div class="main">
+
+		<p><b>Age:    {{userage}}<br>Gender:    {{usergender}}<br>Politics:    {{userpolitic}}</b></p>
     		
-    		</div>
-
-    		<br style="clear:both;">
-
     	</div>
-	</div>
-	</script>
+
+    	<br style="clear:both;">
+
+    </div>	
+
+    <div class="bottomhalf">
+    </div>
+
+    </div>
+  {{/posts}}  
+</script>
 </div>
 <!-- 
 /* 
