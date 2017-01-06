@@ -139,7 +139,7 @@ $(function() {
 		   var upolitic = $('input[name="politic"]:checked').val();
 		} else if($('input[name="politic"]:checked').val() == null) {
 			error = 1;
-			errormsg = 'Please state your political placement';
+			errormsg = 'Please state your ideological placement';
 			upolitic ='undefined';
 		}
 		/*if ($('input[name="politic"]:checked').val() == "Right-wing") {           
@@ -168,7 +168,7 @@ $(function() {
   			uage = "undefined";
   		} else if(isNaN(uage)) {
   			error = 1;
-  			errormsg = 'Please enter your age using only numbers';
+  			errormsg = 'Please enter your age using numbers only';
   		}  
 
   		if(error == 0) {
@@ -346,7 +346,7 @@ $(function() {
   		{ 
   			times[i] = +times[i]; 
   			
-  			themsg = usernames[i] + " liked your post";
+  			themsg = usernames[i] + " showed interest in your profile";
 
   			setTimeout(function(themsg) {
   				that.text(parseInt(that.text()) + 1);
@@ -379,24 +379,7 @@ $(function() {
       // Like buttons can only be clicked once
 		  $(this).attr("disabled", true);
 	  });
-		// CLicker share-button
-	  $('.btn-share').on('click', function() {
-     		document.getElementById("myDropdown").classList.toggle("show");
-  	  
-	  	window.onclick = function(event) {
-  			if (!event.target.matches('.btn-share')) {
-
-    				var dropdowns = document.getElementsByClassName("dropdown-content");
-    				var i;
-    				for (i = 0; i < dropdowns.length; i++) {
-     					var openDropdown = dropdowns[i];
-      					if (openDropdown.classList.contains('show')) {
-        					openDropdown.classList.remove('show');
-      					}
-    				}
-  			}
-		}
-	  });
+	
     // Initalize Masonry plugin
     // For display of user and other players boxes in columns without gaps
 		$('#task').masonry({
