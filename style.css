@@ -111,7 +111,7 @@ div.main1 {
   width: 510px !important;
   margin-left: 6px;
   margin-top: 3px;
-	margin-bottom: 10px !important;
+	margin-bottom: -100px !important;
 }
 .entry1 {
 	width: 540px;
