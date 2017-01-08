@@ -134,7 +134,7 @@ div.main1 {
 	width: 120px;
 	font-size: 9pt;
 	text-align: left;
-	padding-left: 15px; /* text to avatar distance */
+	padding-left: 0px; /* text to avatar distance */
 }
 
 .tophalf1 h3 {
