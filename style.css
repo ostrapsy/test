@@ -105,14 +105,18 @@ body {
 	margin: 10px;
 }
 /*
-Nedan är min egen!
+De 2 nedan är mina egna!
 */
 div.main1 {
-  float: right;
   width: 510px !important;
   margin-left: -16px;
   margin-top: 3px;
 	margin-bottom: -10px !important;
+}
+.entry1 {
+	width: 540px;
+	float: left;
+	margin: 10px;
 }
 
 div.main {
