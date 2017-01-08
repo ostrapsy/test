@@ -97,7 +97,11 @@ $(function() {
 	  $("#profiles2").append(html);
 	  $('#submit_after_profiles').on('click',function() {
 		window.location="https://www.google.com";
-	});
+	})
+	  $('#task').masonry({
+		  itemSelector : '.entry',
+		  columnWidth : 10
+		});
   }
 
   // **Slide:** **Username**       
