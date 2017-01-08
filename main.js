@@ -72,9 +72,9 @@ $(function() {
 	$('#after_task').show();
   	$('#submit_after_task').on('click',function() {
 		$('#after_task').hide();
-		if (window.settings.condition_likes == settings.condition_1_likes) {
+		if (window.condition == 1) {
 		init_profiles();
-		} else if (window.settings.condition_likes == settings.condition_2_likes) {
+		} else if (window.condition == 2) {
 		init_profiles2();
 		}
 	});
