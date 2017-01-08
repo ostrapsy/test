@@ -124,11 +124,11 @@ You can edit the instructions text for entering demo below.
 	<b>Age:</b>  <input type="text" size="3" maxlength="3" style="vertical-align: middle; margin: 0px; width: 50px;" id="age"  autocomplete="off" /><br><br>
 	<b>Gender:</b><br>
 	<form action="" id=genderForm>
-		<input type="radio" id="female" name="gender" value="Female">
+		<input type="radio" id="female" name="gender" value="female">
  	 		<label for="female">Female</label>
- 	 	<input type="radio" id="male" name="gender" value="Male">
+ 	 	<input type="radio" id="male" name="gender" value="male">
  	 		<label for="male">Male</label>
-		<input type="radio" id="other" name="gender" value="Other">
+		<input type="radio" id="other" name="gender" value="other">
  	 		<label for="other">Other</label>
 	</form>
 	<b>Political placement:</b><br>
@@ -227,7 +227,7 @@ De två divsen nedan är för after task
     	
     	<div class="main1">
 		<p><i>"A {{userage}} year old {{usergender}} adhering to {{userpolitic}} politics."</i></p>
-		<p>{{text}}</p>
+		<p>{{text}} <a href="https://www.google.com">survery</a></p>
     	</div>
 	
 	
@@ -247,14 +247,14 @@ De två divsen nedan är för after task
 	<h3></h3>
 	<script type="template/text" id="newtmp2"> 
   {{#posts2}}
-    <div class="entry">
-    <div class="tophalf">
+    <div class="entry1">
+    <div class="tophalf1">
 
     	<img src="{{avatar}}" class="avatar">
         <h3>{{username}}</h3>
     	
-    	<div class="main">
-		<p><b>Age:    {{userage}}<br>Gender:    {{usergender}}<br>Politics:    {{userpolitic}}</b></p>
+    	<div class="main1">
+		<p><i>"A {{userage}} year old {{usergender}} adhering to {{userpolitic}} politics."</i></p>
 		<p>{{text}}</p>
     	</div>
 	
@@ -269,14 +269,14 @@ De två divsen nedan är för after task
     </div>
   {{/posts2}}
   {{#posts1}}
-    <div class="entry">
-    <div class="tophalf">
+    <div class="entry1">
+    <div class="tophalf1">
 
     	<img src="{{avatar}}" class="avatar">
         <h3>{{username}}</h3>
     	
-    	<div class="main">
-		<p><b>Age:    {{userage}}<br>Gender:    {{usergender}}<br>Politics:    {{userpolitic}}</b></p>
+    	<div class="main1">
+		<p><i>"A {{userage}} year old {{usergender}} adhering to {{userpolitic}} politics."</i></p>
 		<p>{{text}} <a href="www.google.com">survery</a></p>
     	</div>
 	
