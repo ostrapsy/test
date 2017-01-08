@@ -246,6 +246,28 @@ De två divsen nedan är för after task
 <div id="profiles2" style="display:none;">
 	<h3></h3>
 	<script type="template/text" id="newtmp2">
+	{{#posts1}}
+    <div class="entry">
+    <div class="tophalf">
+
+    	<img src="{{avatar}}" class="avatar">
+        <h3>{{username}}</h3>
+    	
+    	<div class="main">
+		<p><b>Age:    {{userage}}<br>Gender:    {{usergender}}<br>Politics:    {{userpolitic}}</b></p>
+		<p>{{text}}Bajs</p>
+    	</div>
+	
+	
+    	<br style="clear:both;">
+
+    </div>	
+
+    <div class="bottomhalf">
+    </div>
+
+    </div>
+  {{/posts1}} 
   {{#posts2}}
     <div class="entry">
     <div class="tophalf">
