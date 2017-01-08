@@ -105,18 +105,47 @@ body {
 	margin: 10px;
 }
 /*
-De 2 nedan är mina egna!
+De nedan är mina egna! (allt med append-1)
 */
 div.main1 {
   width: 510px !important;
   margin-left: 6px;
   margin-top: 3px;
-	margin-bottom: -100px !important;
+	margin-bottom: -10px !important;
 }
 .entry1 {
 	width: 540px;
 	float: left;
 	margin: 10px;
+}
+.tophalf1 {
+	margin-bottom: 0px !important;
+    background-color: #ffffff;
+	border: 1px solid #d5d7e0;
+	padding: 15px;	
+}
+
+.tophalf1 img {
+	float: left;
+}
+
+.tophalf1 .main {
+	float: left;
+	width: 120px;
+	font-size: 9pt;
+	text-align: left;
+	padding-left: 15px; /* text to avatar distance */
+}
+
+.tophalf1 h3 {
+	color: #3B5999;
+  font-variant: normal;
+	font-size: 20px;
+	text-transform:capitalize;
+  margin-left: 85px;
+  padding-left: 0px;
+  margin-top: 35px;
+  margin-bottom: 0;
 }
 
 div.main {
