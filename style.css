@@ -109,7 +109,7 @@ De nedan är mina egna! (allt med append-1)
 */
 div.main1 {
   width: 510px !important;
-  margin-left: 6px;
+  margin-left: -16px;
   margin-top: 3px;
 	margin-bottom: -10px !important;
 }
@@ -134,7 +134,7 @@ div.main1 {
 	width: 120px;
 	font-size: 9pt;
 	text-align: left;
-	padding-left: 0px; /* text to avatar distance */
+	padding-left: 15px; /* text to avatar distance */
 }
 
 .tophalf1 h3 {
