@@ -9,9 +9,9 @@ window.others3 = {
 	"userage": "64",
 	"usergender": "Female",
 	"userpolitic": "Centre-left",
+	"shownlikes": "6",
         "text": "Let me introduce myself. I’m Sarah, married, and mother of two wonderful (grown up) children. My career has been a bit peculiar. Starting off as a graduate historian, I switched to an entirely different discipline: occupational assessor trying to help young people with disabilities to get a job. I’ve just retired and started spending more time on my hobbies, such as singing, reading, and playing volleyball.",
         "likes": [12000, 14000,15000,35000,80000,100000,110000,150000,20000] //9
-	"shownlikes": "6"
       },
       {
         "avatar": "avatars/others/john.png",
@@ -19,9 +19,9 @@ window.others3 = {
 	"userage": "57",
 	"usergender": "Male",
 	"userpolitic": "Centre-right",
+	"shownlikes": "4",
         "text": "Hi there, I’m 57 years old, married, with two kids. I’ve been a computer programmer in the states for about 30 years, but don’t worry: I don’t have the dusty haircut, oversized buttoned shirt and nerdie big frame glasses. I am a member of a group called World War Ethusiasts- we recreate and discuss things a war related. Cheers, John",
 		"likes": [20000, 21000, 30000, 35000] //4
-	      "shownlikes": "4"
       },
       {
         "avatar": "avatars/others/anca.png",
@@ -29,9 +29,9 @@ window.others3 = {
 	"userage": "32",
 	"usergender": "Female",
 	"userpolitic": "Left-wing",
+	"shownlikes": "5",
         "text": "I am a Computer Science student, interested in Natural Language processing. Also a lover of loose leaf tea and a Semantic Web enthusiast.",
         "likes": [10000, 12000, 40000, 80000, 120000] //5
-	      "shownlikes": "5"
       },
     ]
   };
