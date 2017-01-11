@@ -113,6 +113,11 @@ div.main1 {
   margin-top: 3px;
 	margin-bottom: -10px !important;
 }
+
+.last_continue {
+  float: right;
+  margin-right: 85px;
+}
 .entry1 {
 	width: 550px;
 	float: left;
@@ -330,14 +335,6 @@ span.badge.badge-custom.userslikes {
 }
 
 #submit_avatar {
-  float: right;
-  margin-right: 85px;
-  padding: 10px;
-  padding-left:15px;
-  padding-right:15px;
-}
-
-#submit_after_profiles {
   float: right;
   margin-right: 85px;
   padding: 10px;
