@@ -35,10 +35,10 @@ $(function() {
 	// In cases with only 1 "like," a second "like" is added with time point 9999999. This "like" is added for programming purposes and is never executed, as it is outside the task time
 
     // In condition 1, user will receive 5 likes at the following timepoints (in ms). Default: [10000, 15000,35000,80000,1320000,150000]
-    settings.condition_1_likes = [7000, 9999999]; 
+    settings.condition_1_likes = [7000, 9999999]; // 9
 
     // In condition 2, user will receive 6 likes at the following timepoints (in ms). Default: [10000, 15000,35000,80000,1320000,150000]
-    settings.condition_2_likes = [5000, 10000,12000,19000,280000];  
+    settings.condition_2_likes = [5000, 10000,12000,19000,28000];  // 5
 
 	// **Others' likes**     
 	// To keep the total distribution of "likes" constant across conditions, The "likes" received by one group member can be adjusted according to the participant's. By default, the other group member receives 9 "likes" in the participant-ostracism condition, 5 in the participant-inclusion condtion, and 1 in the participant-overinclusion condtion.
@@ -97,7 +97,7 @@ $(function() {
 	  $("#profiles2").append(html);
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles2").append(html);
-	  $('#submit_after_profiles').on('click',function() {
+	  $('#submit_after_profiles2').on('click',function() {
 		window.location="https://www.google.com";
 	})
 	  /*$('#profiles2').masonry({
