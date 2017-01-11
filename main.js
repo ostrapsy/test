@@ -85,8 +85,6 @@ $(function() {
 	  $('#profiles').show();
 	  var tpl = $('#newtmp').html(),html = Mustache.to_html(tpl, others2);
 	  $("#profiles").append(html);
-	  //$("#profiles").append($('#last_continue_button'));
-	  $('#last_continue_button').show();
 	  $('#submit_after_profiles').on('click',function() {
 		window.location="https://www.google.com";
 	});
@@ -95,7 +93,6 @@ $(function() {
   function init_profiles2() {
 	  
 	  $('#profiles2').show();
-	  $('#last_continue_button').show();
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others2);
 	  $("#profiles2").append(html);
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
