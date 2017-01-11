@@ -81,11 +81,10 @@ $(function() {
   }
 	
   function init_profiles() {
-	  
+	  $('#last_continue_button').show();
 	  $('#profiles').show();
 	  var tpl = $('#newtmp').html(),html = Mustache.to_html(tpl, others2);
 	  $("#profiles").append(html);
-	  $('#last_continue_button').show();
 	  $('#submit_after_profiles').on('click',function() {
 		window.location="https://www.google.com";
 	});
