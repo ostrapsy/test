@@ -86,6 +86,7 @@ $(function() {
 	  var tpl = $('#newtmp').html(),html = Mustache.to_html(tpl, others2);
 	  $("#profiles").append(html);
 	  $("#profiles").append($('#last_continue_button'));
+	  $('#last_continue_button').show();
 	  $('#submit_after_profiles').on('click',function() {
 		window.location="https://www.google.com";
 	});
