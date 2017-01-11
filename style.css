@@ -108,13 +108,13 @@ body {
 De nedan är mina egna! (allt med append-1)
 */
 div.main1 {
-  width: 610px !important;
+  width: 510px !important;
   margin-left: -16px;
   margin-top: 3px;
 	margin-bottom: -10px !important;
 }
 .entry1 {
-	width: 650px;
+	width: 550px;
 	float: left;
 	margin: 10px;
 }
