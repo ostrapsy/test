@@ -97,13 +97,14 @@ $(function() {
 	  $("#profiles2").append(html);
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles2").append(html);
+	  $('#last_continue').show();
 	  $('#submit_after_profiles').on('click',function() {
 		window.location="https://www.google.com";
 	})
-	  $('#profiles2').masonry({
+	  /*$('#profiles2').masonry({
 		  itemSelector : '.entry1',
 		  columnWidth : 10
-		});
+		});*/
   }
 
   // **Slide:** **Username**       
