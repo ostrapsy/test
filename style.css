@@ -107,6 +107,11 @@ body {
 /*
 De nedan är mina egna! (allt med append-1)
 */
+div.last_continue {
+  position:relative;
+  float:right;
+}
+
 div.main1 {
   width: 510px !important;
   margin-left: -16px;
@@ -114,11 +119,7 @@ div.main1 {
 	margin-bottom: -10px !important;
 }
 
-.last_continue {
-  position:relative;
-  float:right;
-  
-}
+
 .entry1 {
 	width: 550px;
 	float: left;
