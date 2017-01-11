@@ -115,8 +115,8 @@ div.main1 {
 }
 
 .last_continue {
-  float: right;
-  margin-right: 85px;
+  position:absolute;
+  right:0px;
 }
 .entry1 {
 	width: 550px;
