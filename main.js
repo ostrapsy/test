@@ -100,10 +100,10 @@ $(function() {
 	  $('#submit_after_profiles').on('click',function() {
 		window.location="https://www.google.com";
 	})
-	  /*$('#profiles2').masonry({
-		  itemSelector : '.entry',
+	  $('#profiles2').masonry({
+		  itemSelector : '.entry1',
 		  columnWidth : 10
-		});*/
+		});
   }
 
   // **Slide:** **Username**       
