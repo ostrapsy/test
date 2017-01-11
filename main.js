@@ -81,7 +81,7 @@ $(function() {
   }
 	
   function init_profiles() {
-	  $('#last_continue_button').show();
+	  
 	  $('#profiles').show();
 	  var tpl = $('#newtmp').html(),html = Mustache.to_html(tpl, others2);
 	  $("#profiles").append(html);
@@ -91,13 +91,13 @@ $(function() {
   }
 	
   function init_profiles2() {
-	  $('#last_continue_button').show();
+	  
 	  $('#profiles2').show();
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others2);
 	  $("#profiles2").append(html);
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles2").append(html);
-	  $('#submit_after_profiles2').on('click',function() {
+	  $('#submit_after_profiles').on('click',function() {
 		window.location="https://www.google.com";
 	})
 	  /*$('#profiles2').masonry({
