@@ -110,6 +110,8 @@ De nedan är mina egna! (allt med append-1)
 div.last_continue {
   position:relative;
   float:right;
+  margin-right: 100px;
+	margin-top: 20;
 }
 
 div.main1 {
