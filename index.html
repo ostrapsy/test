@@ -216,9 +216,10 @@ De två divsen nedan är för after task
 */
 -->
 <div id="profiles" style="display:none;">
-	<h3>Users interested in your profile</h3>
-	These users showed an interest in your profile during the group task.
-	<script type="template/text" id="newtmp">
+	<div class="last_continue" style="display:none;">
+		<button type="submit" id="submit_after_profiles">Continue</button>
+	</div>
+<script type="template/text" id="newtmp">
   {{#posts1}}
     <div class="entry1">
     <div class="tophalf1">
@@ -250,6 +251,9 @@ De två divsen nedan är för after task
 </div>
 	
 <div id="profiles2" style="display:none;">
+	<div class="last_continue" style="display:none;">
+		<button type="submit" id="submit_after_profiles">Continue</button>
+	</div>
 <script type="template/text" id="newtmp2"> 
   {{#posts2}}
     <div class="entry1">
