@@ -92,7 +92,7 @@ $(function() {
 	
   function init_profiles2() {
 	  
-	  $('#profiles2').show();
+	  $('#profiles2').show('#last_continue');
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others2);
 	  $("#profiles2").append(html);
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
