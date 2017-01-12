@@ -112,7 +112,7 @@ div.last_continue {
   float:right;
   margin-right: 100px;
 	margin-top: 20;
-	z-index: 20;
+	z-index: 99999999;
 }
 
 div.main1 {
