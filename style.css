@@ -113,7 +113,7 @@ div.last_continue {
   margin-right: 100px;
 	margin-top: 20;
 }
-button.submit_after_profiles {
+#submit_after_profiles {
   position:relative;
   float:right;
   margin-right: 10px;
