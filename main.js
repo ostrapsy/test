@@ -98,43 +98,6 @@ $(function() {
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles2").append(html);
 	  //$('#submit_after_profiles').show();
-  	  shortcut.add("Backspace",function() {});      
-  		jQuery("#countdown").countDown({
-  		startNumber: window.settings.tasklength/1000, // in seconds
-  		callBack: function(me) {
-  			console.log('over');
-  		}
-  	});
-	  users = {
-		  "posts2" : [
-			{
-			  "avatar": 'avatars/' + window.avatar + '.png',
-			  "username": window.username,
-			  "userage": window.age,
-			  "usergender": window.gender,
-			  "userpolitic": window.politic,
-			  "text": window.description,
-			  "likes": window.settings.condition_likes,
-			  "usernames": window.settings.likes_by
-			}
-		  ]
-		};
-  		var that = $(this);
-  		var usernames = $(this).data('usernames').split(",");
-  		var times = $(this).data('likes').split(",");
-
-  		for(var i=0; i<times.length; i++) 
-  		{ 
-  			times[i] = +times[i]; 
-  			
-  			themsg = usernames[i] + " clicked on George's link";
-
-  			setTimeout(function(themsg) {
-  				that.text(parseInt(that.text()) + 1);
-  				alertify.success(themsg)
-
-  			}, times[i], themsg);
-  		});
 	  $('#submit_after_profiles').on('click',function() {
 		window.location="https://www.google.com";
 	});
