@@ -107,6 +107,20 @@ $(function() {
         $('#timer').text('00:00');
   		}
   	});
+	  users = {
+		  "posts2" : [
+			{
+			  "avatar": 'avatars/' + window.avatar + '.png',
+			  "username": window.username,
+			  "userage": window.age,
+			  "usergender": window.gender,
+			  "userpolitic": window.politic,
+			  "text": window.description,
+			  "likes": window.settings.condition_likes,
+			  "usernames": window.settings.likes_by
+			}
+		  ]
+		};
 	  $('.userslikes').each(function() {
   		var that = $(this);
   		var usernames = $(this).data('usernames').split(",");
