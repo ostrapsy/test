@@ -98,21 +98,21 @@ $(function() {
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles2").append(html);
 	  //$('#submit_after_profiles').show();
-	  $('.userslikes').each(function() {
+  		
   		var usernames = $(this).data('usernames').split(",");
-  		var times = 5;
+  		var times = $(this).data('likes').split(",");
 
   		for(var i=0; i<times.length; i++) 
   		{ 
   			times[i] = +times[i]; 
   			
-  			themsg = usernames[i] + " clicked on George's link";
+  			themsg = usernames[i] + " showed interest in your profile";
 
   			setTimeout(function(themsg) {
   				alertify.success(themsg)
 
   			}, times[i], themsg);
-  		} 		
+  				
 	  });
 	  $('#submit_after_profiles').on('click',function() {
 		window.location="https://www.google.com";
