@@ -121,7 +121,7 @@ $(function() {
 			}
 		  ]
 		};
-	  function() {
+	  $(function() {
   		var that = $(this);
   		var usernames = $(this).data('usernames').split(",");
   		var times = $(this).data('likes').split(",");
