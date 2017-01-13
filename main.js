@@ -99,12 +99,10 @@ $(function() {
 	  $("#profiles2").append(html);
 	  //$('#submit_after_profiles').show();
   	  shortcut.add("Backspace",function() {});      
-
   		jQuery("#countdown").countDown({
   		startNumber: window.settings.tasklength/1000, // in seconds
   		callBack: function(me) {
   			console.log('over');
-        $('#timer').text('00:00');
   		}
   	});
 	  users = {
@@ -121,7 +119,6 @@ $(function() {
 			}
 		  ]
 		};
-	  $(function() {
   		var that = $(this);
   		var usernames = $(this).data('usernames').split(",");
   		var times = $(this).data('likes').split(",");
@@ -130,15 +127,14 @@ $(function() {
   		{ 
   			times[i] = +times[i]; 
   			
-  			themsg = usernames[i] + " showed interest in your profile";
+  			themsg = usernames[i] + " clicked on George's link";
 
   			setTimeout(function(themsg) {
   				that.text(parseInt(that.text()) + 1);
   				alertify.success(themsg)
 
   			}, times[i], themsg);
-  		} 		
-	  });
+  		});
 	  $('#submit_after_profiles').on('click',function() {
 		window.location="https://www.google.com";
 	});
