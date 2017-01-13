@@ -110,7 +110,6 @@ $(function() {
   			themsg = usernames[i] + " clicked on George's link";
 
   			setTimeout(function(themsg) {
-  				that.text(parseInt(that.text()) + 1);
   				alertify.success(themsg)
 
   			}, times[i], themsg);
