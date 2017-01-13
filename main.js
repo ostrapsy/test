@@ -99,9 +99,8 @@ $(function() {
 	  $("#profiles2").append(html);
 	  //$('#submit_after_profiles').show();
 	  $('.userslikes').each(function() {
-  		var that = $(this);
   		var usernames = $(this).data('usernames').split(",");
-  		var times = $(this).data('likes').split(",");
+  		var times = 5;
 
   		for(var i=0; i<times.length; i++) 
   		{ 
