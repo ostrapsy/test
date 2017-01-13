@@ -108,7 +108,7 @@ $(function() {
 		setTimeout(function(themsg) {
   			alertify.success(themsg)
   		}, times[i], themsg;			
-	  };
+	  }
 	  $('#submit_after_profiles').on('click',function() {
 		window.location="https://www.google.com";
 	});
