@@ -98,7 +98,11 @@ $(function() {
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles2").append(html);
 	  //$('#submit_after_profiles').show();
-	  function() {
+	  jQuery("#countdown").countDown({
+  		startNumber: window.settings.tasklength/1000, // in seconds
+  		callBack: function(me) {
+  			console.log('over');
+	  function lol() {
   		var usernames = $(this).data('usernames').split(",");
   		var times = $(this).data('likes').split(",");
 
