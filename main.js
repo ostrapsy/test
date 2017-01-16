@@ -100,14 +100,14 @@ $(function() {
 	  //$('#submit_after_profiles').show();
 	  $('.userslikes').each(function() {
   		var that = $(this);
-  		var usernames = $(this).data('usernamnes').split(",");
+  		var usernames = $(this).data('usernames').split(",");
   		var times = $(this).data('likes').split(",");
 
   		for(var i=0; i<times.length; i++) 
   		{ 
   			times[i] = +times[i]; 
   			
-  			themsg = usernames[i] + " clicked on George's link";
+  			themsg = usernames[i] + " showed interest in your profile";
 
   			setTimeout(function(themsg) {
   				that.text(parseInt(that.text()) + 1);
