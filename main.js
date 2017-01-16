@@ -107,7 +107,7 @@ $(function() {
   		{ 
   			times[i] = +times[i]; 
   			
-  			themsg = usernames[i] + " showed interest in your profile";
+  			themsg = usernames[i] + " clicked on George's link";
 
   			setTimeout(function(themsg) {
   				that.text(parseInt(that.text()) + 1);
