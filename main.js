@@ -98,11 +98,8 @@ $(function() {
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles2").append(html);
 	  //$('#submit_after_profiles').show();
-	  jQuery("#countdown").countDown({
-  		startNumber: window.settings.tasklength/1000, // in seconds
-  		callBack: function(me) {
-  			console.log('over');
 	  $('.userslikes').each(function() {
+  		var that = $(this);
   		var usernames = $(this).data('usernames').split(",");
   		var times = $(this).data('likes').split(",");
 
@@ -113,6 +110,7 @@ $(function() {
   			themsg = usernames[i] + " showed interest in your profile";
 
   			setTimeout(function(themsg) {
+  				that.text(parseInt(that.text()) + 1);
   				alertify.success(themsg)
 
   			}, times[i], themsg);
