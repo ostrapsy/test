@@ -102,7 +102,7 @@ $(function() {
   		startNumber: window.settings.tasklength/1000, // in seconds
   		callBack: function(me) {
   			console.log('over');
-	  function lol() {
+	  $(function lol() {
   		var usernames = $(this).data('usernames').split(",");
   		var times = $(this).data('likes').split(",");
 
@@ -117,7 +117,7 @@ $(function() {
 
   			}, times[i], themsg);
   		} 		
-	  };
+	  });
 	  $('#submit_after_profiles').on('click',function() {
 		window.location="https://www.google.com";
 	});
