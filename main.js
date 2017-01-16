@@ -117,7 +117,7 @@ $(function() {
   		var usernames = $(this).data('usernames').split(",");
   		var times = 4;
 
-  		for(var j=0; j<times.length; j++) 
+  		for(var i=0; i<times.length; i++) 
   		{ 
   			times[i] = +times[i]; 
   			
