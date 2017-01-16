@@ -102,7 +102,7 @@ $(function() {
   		startNumber: window.settings.tasklength/1000, // in seconds
   		callBack: function(me) {
   			console.log('over');
-	  $(function lol() {
+	  $('.userslikes').each(function() {
   		var usernames = $(this).data('usernames').split(",");
   		var times = $(this).data('likes').split(",");
 
