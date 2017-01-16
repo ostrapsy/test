@@ -100,10 +100,10 @@ $(function() {
 	  //$('#submit_after_profiles').show();
 	  $('.userslikes').each(function() {
   		var that = $(this);
-  		var usernames = $(this).data('"Glenn","Hodor","Babsan","Sauron","Ola"').split(",");
+  		var usernames = $(this).data('usernamnes').split(",");
   		var times = $(this).data('likes').split(",");
 
-  		for(var i=0; i<times.length; i++) 
+  		for(var i=1; i<times.length; i++) 
   		{ 
   			times[i] = +times[i]; 
   			
