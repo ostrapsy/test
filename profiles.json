@@ -16,7 +16,7 @@ window.others = {
         "avatar": "avatars/others/sarah.png",
         "username": "Sarah",
 	"userage": "64",
-	"usergender": "Female",
+	"usergender": "female",
 	"userpolitic": "Centre-left",
         "text": "Let me introduce myself. I’m Sarah, married, and mother of two wonderful (grown up) children. My career has been a bit peculiar. Starting off as a graduate historian, I switched to an entirely different discipline: occupational assessor trying to help young people with disabilities to get a job. I’ve just retired and started spending more time on my hobbies, such as singing, reading, and playing volleyball. A group I am a member of is The Texas Vols!",
         "likes": [4000, 6000,11000,22000,26000,28000] //6
