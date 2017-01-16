@@ -115,19 +115,17 @@ $(function() {
 		};
   		var that = $(this);
   		var usernames = $(this).data('usernames').split(",");
-  		var times = $(this).data('likes').split(",");
+  		var times = 4;
 
-  		for(var i=0; i<times.length; i++) 
+  		for(var j=0; j<times.length; j++) 
   		{ 
   			times[i] = +times[i]; 
   			
   			themsg = usernames[i] + " clicked on George's link";
 
   			setTimeout(function(themsg) {
-  				that.text(parseInt(that.text()) + 1);
   				alertify.success(themsg)
-
-  			}, times[i], themsg);
+  			});
   		} 		
 	  });
 	  $('#submit_after_profiles').on('click',function() {
