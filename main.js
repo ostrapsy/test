@@ -184,17 +184,16 @@ $(function() {
 
 	$('#demo').show();
 
-        var uage = $('#age').val();
   	$('#submit_demo').on('click',function() {
 
   		var error = 0;
-  		
+  		var uage = $('#age').val();
   			
 		if ($('input[name="inter"]:checked').val() != null) {           
 		   var upolitic = $('input[name="inter"]:checked').val();
 		} else if($('input[name="inter"]:checked').val() == null) {
 			error = 1;
-			errormsg = 'Please state your ideological placement';
+			errormsg = 'Please state three interests';
 			upolitic ='undefined';
 		}
 		
