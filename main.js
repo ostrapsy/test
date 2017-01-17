@@ -189,25 +189,18 @@ $(function() {
 
   		var error = 0;
   		var uage = $('#age').val();
+		var upolitic = [];
+			$("input:checked").each(function() {
+  				vehicles.push($(this).val());
+			});
 		
-		if ($('input[name="politic"]:checked').val() != null) {           
-		   var upolitic = $('input[name="politic"]:checked').val();
+		if ($('input[name="inter"]:checked').val() != null) {           
+		   upolitic = $('input[name="politic"]:checked').val();
 		} else if($('input[name="politic"]:checked').val() == null) {
 			error = 1;
 			errormsg = 'Please state your ideological placement';
 			upolitic ='undefined';
 		}
-		/*if ($('input[name="politic"]:checked').val() == "Right-wing") {           
-			window.settings.likes_by = ['John','Mary','George','Jane','Arjen'];
-   		 } else if($('input[name="politic"]:checked').val() == "Centre-right") {
-			window.settings.likes_by = ['George','John','Mary','Arjen','Jane'];
-   		 } else if($('input[name="politic"]:checked').val() == "Centre") {
-			window.settings.likes_by = ['George','Arjen','Ky','Nick','Sarah'];
-   		 } else if($('input[name="politic"]:checked').val() == "Centre-left") {
-			window.settings.likes_by = ['George','AncaD','Sarah','Nick','Arjen'];
-  		  } else if($('input[name="politic"]:checked').val() == "Left-wing") {
-			window.settings.likes_by = ['Ky','Heather','Nick','Arjen','AncaD'];
-   		 }*/
 		
 		if ($('input[name="gender"]:checked').val() != null) {           
 		   var ugender = $('input[name="gender"]:checked').val();
