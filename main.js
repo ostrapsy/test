@@ -223,7 +223,7 @@ $(function() {
 			$('#demo').hide();
 			window.age = uage;
 			window.gender = ugender;
-			window.politic[] = upolitic;
+			window.politic = upolitic[];
   			init_avatar();  			
   		} else {
   			alertify.log(errormsg,"error");
