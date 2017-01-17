@@ -65,7 +65,7 @@ $(function() {
   	$('#intro').show();
   	$('#submit_intro').on('click',function() {
 			$('#intro').hide();
-  			init_init_profiles2();  			
+  			init_profiles2();  			
   	});	
   }
 	
