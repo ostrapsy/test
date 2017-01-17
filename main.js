@@ -102,10 +102,13 @@ $(function() {
 		  ]
 		};
 		
-  		var that = $(this);
+  		/*var that = $(this);
   		var usernames = $(this).data("usernames").split(",");
-  		var times = $(this).data("likes").split(",");
-
+  		var times = $(this).data("likes").split(",");*/
+		
+  		var usernames = $.data("usernames").split(",");
+  		var times = $.data("likes").split(",");
+		  
   		for(var i=0; i<times.length; i++) 
   		{ 
   			times[i] = +times[i]; 
