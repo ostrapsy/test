@@ -65,7 +65,7 @@ $(function() {
   	$('#intro').show();
   	$('#submit_intro').on('click',function() {
 			$('#intro').hide();
-  			init_name();  			
+  			init_init_profiles2();  			
   	});	
   }
 	
@@ -102,12 +102,9 @@ $(function() {
 		  ]
 		};
 		
-  		/*var that = $(this);
+  		var that = $(this);
   		var usernames = $(this).data("usernames").split(",");
-  		var times = $(this).data("likes").split(",");*/
-		
-  		var usernames = ("usernames").split(",");
-  		var times = ("likes").split(",");
+  		var times = $(this).data("likes").split(",");
 		  
   		for(var i=0; i<times.length; i++) 
   		{ 
