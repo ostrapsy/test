@@ -73,21 +73,7 @@ $(function() {
 	$('#after_task').show();
   	$('#submit_after_task').on('click',function() {
 		$('#after_task').hide();
-		if (window.condition == 1) {
-		init_profiles();
-		} else if (window.condition == 2) {
 		init_profiles2();
-		}
-	});
-  }
-	
-  function init_profiles() {
-	  
-	  $('#profiles').show();
-	  var tpl = $('#newtmp').html(),html = Mustache.to_html(tpl, others2);
-	  $("#profiles").append(html);
-	  $('#submit_after_profiles').on('click',function() {
-		window.location="https://www.google.com";
 	});
   }
 	
