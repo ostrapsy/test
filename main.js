@@ -86,7 +86,8 @@ $(function() {
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles2").append(html);
 	  //$('#submit_after_profiles').show();
-	  users = {
+	  $('.userslikes').each(function() {
+		 users = {
 		  "posts" : [
 			{
 			  "avatar": 'avatars/' + window.avatar + '.png',
@@ -100,12 +101,10 @@ $(function() {
 			}
 		  ]
 		};
-	  $('.userslikes').each(function() {
-		
 		
   		var that = $(this);
-  		var usernames = $(this).data('usernames').split(",");
-  		var times = $(this).data('likes').split(",");
+  		var usernames = $(this).data(window.settings.likes_by_after).split(",");
+  		var times = $(this).data(window.settings.condition_likes).split(",");
 
   		for(var i=0; i<times.length; i++) 
   		{ 
