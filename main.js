@@ -189,13 +189,19 @@ $(function() {
 
   		var error = 0;
   		var uage = $('#age').val();
-		var upolitic = [];
-			$("input[name="inter":checked").each(function() {
-  				upolitic.push($(this).val());
-			});
 		
+		
+  		var values = [];
+  		var inters = form.inter;
+
+  		for (var i=0, iLen=inters.length; i<iLen; i++) {
+    			if (inters[i].checked) {
+      				values.push(inters[i].value);
+    			}
+  		}
+  
 		/*if ($('input[name="inter"]:checked').val() != null) {           
-		   upolitic = $('input[name="inter"]:checked').val();
+		   var upolitic = $('input[name="inter"]:checked').val();
 		} else if($('input[name="inter"]:checked').val() == null) {
 			error = 1;
 			errormsg = 'Please state your ideological placement';
@@ -223,7 +229,7 @@ $(function() {
 			$('#demo').hide();
 			window.age = uage;
 			window.gender = ugender;
-			window.politic = upolitic[];
+			window.politic = values;
   			init_avatar();  			
   		} else {
   			alertify.log(errormsg,"error");
