@@ -192,7 +192,7 @@ $(function() {
 		
 		
   		var values = [];
-  		var inters = form.inter;
+  		var inters = form.polForm;
 
   		for (var i=0, iLen=inters.length; i<iLen; i++) {
     			if (inters[i].checked) {
