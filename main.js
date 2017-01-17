@@ -183,7 +183,11 @@ $(function() {
   function init_demo() {
 
 	$('#demo').show();
-
+	$('.checkbox').click(function(){
+   		if ($(this:not(:checked)) && $(".checkbox:checked").length >= 3) {
+       			event.preventDefault()
+    		}
+	});
   	$('#submit_demo').on('click',function() {
 
   		var error = 0;
