@@ -232,7 +232,7 @@ $(function() {
 			$('#demo').hide();
 			window.age = uage;
 			window.gender = ugender;
-			window.politic = upolitic;
+			window.newpolitic = upolitic;
   			init_avatar();  			
   		} else {
   			alertify.log(errormsg,"error");
@@ -360,6 +360,7 @@ $(function() {
 			  "username": window.username,
 			  "userage": window.age,
 			  "usergender": window.gender,
+			  "newpolitic": window.newpolitic,
 			  "userpolitic": window.politic,
 			  "text": window.description,
 			  "likes": window.settings.task_likes,
