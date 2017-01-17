@@ -198,10 +198,22 @@ $(function() {
 
   		var error = 0;
   		var uage = $('#age').val();
+		var min = 3;
   			
-		if ($('input[name="inter"]:checked').val() != null) {           
-		   var upolitic = $('input[name="inter"]:checked').val();
-		} else if($('input[name="inter"]:checked').val() == null) {
+		if ($("input[name=inter]:checked").length == min) {           
+		   function getCheckboxValues(interForm) {
+  			var values = [];
+  			var inters = interForm.inter;
+
+  			for (var i=0, iLen=inters.length; i<iLen; i++) {
+    				if (inters[i].checked) {
+      					values.push(inters[i].value);
+    				}
+  			}
+  			return values;
+		    }
+			var upolitic = values[0] + ", " + values[1] + ", " + values[2];
+		} else if($('input[name="inter"]:checked').val() != min) {
 			error = 1;
 			errormsg = 'Please state three interests';
 			upolitic ='undefined';
@@ -228,7 +240,7 @@ $(function() {
 			$('#demo').hide();
 			window.age = uage;
 			window.gender = ugender;
-			window.newpolitic = upolitic;
+			window.politic = upolitic;
   			init_avatar();  			
   		} else {
   			alertify.log(errormsg,"error");
