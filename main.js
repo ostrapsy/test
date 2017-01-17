@@ -48,7 +48,8 @@ $(function() {
 	
     // Usernames by which the participant will receive "likes"
 	// If group member names are changed, these should be changed accordingly.
-    settings.likes_by = ['George','AncaD','Sarah','Arjen','Jane','Nick','Dan','Heather','Ky']; 
+    settings.likes_by = ['George','AncaD','Sarah','Arjen','Jane','Nick','Dan','Heather','Ky'];
+    settings.likes_by_after = ['AncaD','Sarah','Jane','Nick','Dan','Heather','Ky'];
   }
   
   
@@ -96,7 +97,7 @@ $(function() {
 			  "userpolitic": window.politic,
 			  "text": window.description,
 			  "likes": window.settings.condition_likes,
-			  "usernames": window.settings.likes_by
+			  "usernames": window.settings.likes_by_after
 			}
 		  ]
 		};
@@ -105,7 +106,7 @@ $(function() {
   		var usernames = $(this).data('usernames').split(",");
   		var times = $(this).data('likes').split(",");
 
-  		for(var i=1; i<times.length; i++) 
+  		for(var i=0; i<times.length; i++) 
   		{ 
   			times[i] = +times[i]; 
   			
