@@ -189,9 +189,9 @@ $(function() {
 
   		var error = 0;
   		var uage = $('#age').val();
-		var inter = [];
-			$("input:checked").each(function() {
-  				inter.push($(this).val());
+		var upolitic = [];
+			$("input[name="inter":checked").each(function() {
+  				upolitic.push($(this).val());
 			});
 		
 		/*if ($('input[name="inter"]:checked').val() != null) {           
