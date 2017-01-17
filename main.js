@@ -194,13 +194,13 @@ $(function() {
   				vehicles.push($(this).val());
 			});
 		
-		if ($('input[name="inter"]:checked').val() != null) {           
-		   upolitic = $('input[name="politic"]:checked').val();
-		} else if($('input[name="politic"]:checked').val() == null) {
+		/*if ($('input[name="inter"]:checked').val() != null) {           
+		   upolitic = $('input[name="inter"]:checked').val();
+		} else if($('input[name="inter"]:checked').val() == null) {
 			error = 1;
 			errormsg = 'Please state your ideological placement';
 			upolitic ='undefined';
-		}
+		}*/
 		
 		if ($('input[name="gender"]:checked').val() != null) {           
 		   var ugender = $('input[name="gender"]:checked').val();
