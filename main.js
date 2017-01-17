@@ -213,7 +213,7 @@ $(function() {
   			return values;
 		    }
 			var upolitic = values[0] + ", " + values[1] + ", " + values[2];
-		} else if($('input[name="inter"]:checked').val() != min) {
+		} else if($("input[name=inter]:checked").length != min) {
 			error = 1;
 			errormsg = 'Please state three interests';
 			upolitic ='undefined';
@@ -368,7 +368,6 @@ $(function() {
 			  "username": window.username,
 			  "userage": window.age,
 			  "usergender": window.gender,
-			  "newpolitic": window.newpolitic,
 			  "userpolitic": window.politic,
 			  "text": window.description,
 			  "likes": window.settings.task_likes,
