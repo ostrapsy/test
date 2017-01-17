@@ -106,8 +106,8 @@ $(function() {
   		var usernames = $(this).data("usernames").split(",");
   		var times = $(this).data("likes").split(",");*/
 		
-  		var usernames = $.data("usernames").split(",");
-  		var times = $.data("likes").split(",");
+  		var usernames = ("usernames").split(",");
+  		var times = ("likes").split(",");
 		  
   		for(var i=0; i<times.length; i++) 
   		{ 
