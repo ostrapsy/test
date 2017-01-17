@@ -190,7 +190,7 @@ $(function() {
   		var error = 0;
   		var uage = $('#age').val();
 		
-		function getCheckboxValues(polForm) {
+		
  			var upolitic = [];
   			var inters = polForm.inter;
 
@@ -201,8 +201,6 @@ $(function() {
   			}
   			// Do something with values
   			
-  			return upolitic;
-		}
 		/*if ($('input[id="music"]:checked')) {           
 		   upolitic.push("music");
 		} else if($('input[id="music"]:checked').val() == null) {
