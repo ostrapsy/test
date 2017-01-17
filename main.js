@@ -183,13 +183,17 @@ $(function() {
   function init_demo() {
 
 	$('#demo').show();
-	$('input[name="inter"]').on('click', function() {
-    		var nbcheck = $('input[name="inter"]:checked').length;
-    		if(nbcheck > 2) {
-        		console.log('FORBIDEN!!!!');
-        //Do stuffs you want -->
-    		}
+	  
+	$("input[name=inter]").change(function(){
+    		var max= 3;
+    		if( $("input[name=inter]:checked").length == max ){
+        		$("input[name=inter]").attr('disabled', 'disabled');
+        		$("input[name=inter]:checked").removeAttr('disabled');
+    		}else{
+         		$("input[name=inter]").removeAttr('disabled');
+   		 }
 	});
+	  
   	$('#submit_demo').on('click',function() {
 
   		var error = 0;
