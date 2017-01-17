@@ -86,8 +86,7 @@ $(function() {
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles2").append(html);
 	  //$('#submit_after_profiles').show();
-	  $('.userslikes').each(function() {
-		users = {
+	  users = {
 		  "posts" : [
 			{
 			  "avatar": 'avatars/' + window.avatar + '.png',
@@ -101,6 +100,8 @@ $(function() {
 			}
 		  ]
 		};
+	  $('.userslikes').each(function() {
+		
 		
   		var that = $(this);
   		var usernames = $(this).data('usernames').split(",");
