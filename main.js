@@ -184,30 +184,19 @@ $(function() {
 
 	$('#demo').show();
 
-    
+        var uage = $('#age').val();
   	$('#submit_demo').on('click',function() {
 
   		var error = 0;
-  		var uage = $('#age').val();
-		
-		
- 			var upolitic = [];
-  			var inters = polForm.inter;
-
-  			for (var i=0, iLen=inters.length; i<iLen; i++) {
-    				if (inters[i].checked) {
-      					upolitic.push(inters[i].value);
-    				}
-  			}
-  			// Do something with values
+  		
   			
-		/*if ($('input[id="music"]:checked')) {           
-		   upolitic.push("music");
-		} else if($('input[id="music"]:checked').val() == null) {
+		if ($('input[name="inter"]:checked').val() != null) {           
+		   var upolitic = $('input[name="inter"]:checked').val();
+		} else if($('input[name="inter"]:checked').val() == null) {
 			error = 1;
-			errormsg = 'Please state your interests';
+			errormsg = 'Please state your ideological placement';
 			upolitic ='undefined';
-		}*/
+		}
 		
 		if ($('input[name="gender"]:checked').val() != null) {           
 		   var ugender = $('input[name="gender"]:checked').val();
