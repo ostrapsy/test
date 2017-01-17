@@ -191,21 +191,12 @@ $(function() {
   		var uage = $('#age').val();
 		
 		
-  		var values = [];
-  		var inters = form.polForm;
-
-  		for (var i=0, iLen=inters.length; i<iLen; i++) {
-    			if (inters[i].checked) {
-      				values.push(inters[i].value);
-    			}
-  		}
-  
-		if (values == [3]) {           
+		if ($('input[name="inter"]:checked').val() != null) {           
 		   var upolitic = $('input[name="inter"]:checked').val();
 		} else if($('input[name="inter"]:checked').val() == null) {
 			error = 1;
-			errormsg = 'Please state your ideological placement';
-			values ='undefined';
+			errormsg = 'Please state your interests';
+			upolitic ='undefined';
 		}
 		
 		if ($('input[name="gender"]:checked').val() != null) {           
@@ -229,7 +220,7 @@ $(function() {
 			$('#demo').hide();
 			window.age = uage;
 			window.gender = ugender;
-			window.politic = values;
+			window.politic = upolitic;
   			init_avatar();  			
   		} else {
   			alertify.log(errormsg,"error");
