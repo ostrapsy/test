@@ -103,8 +103,8 @@ $(function() {
 		};
 		
   		var that = $(this);
-  		var usernames = $(this).data(window.settings.likes_by_after).split(",");
-  		var times = $(this).data(window.settings.condition_likes).split(",");
+  		var usernames = $(this).data(settings.likes_by_after).split(",");
+  		var times = $(this).data(settings.condition_likes).split(",");
 
   		for(var i=0; i<times.length; i++) 
   		{ 
