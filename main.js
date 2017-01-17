@@ -201,7 +201,7 @@ $(function() {
 		var min = 3;
   			
 		if ($("input[name=inter]:checked").length == min) {           
-		   function getCheckboxValues(interForm) {
+		   /*function getCheckboxValues(interForm) {*/
   			var values = [];
   			var inters = interForm.inter;
 
@@ -210,11 +210,9 @@ $(function() {
       					values.push(inters[i].value);
     				}
   			}
+  		/*	return values;
+		    }*/
 			var upolitic = values[0] + ", " + values[1] + ", " + values[2];
-			errormsg = upolitic;
-  			return upolitic;
-		    }
-			
 		} else if($("input[name=inter]:checked").length != min) {
 			error = 1;
 			errormsg = 'Please state three interests';
