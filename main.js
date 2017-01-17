@@ -65,7 +65,7 @@ $(function() {
   	$('#intro').show();
   	$('#submit_intro').on('click',function() {
 			$('#intro').hide();
-  			init_profiles2();  			
+  			init_name();  			
   	});	
   }
 	
@@ -102,10 +102,11 @@ $(function() {
 		  ]
 		};
 		
-  		var that = $(this);
-  		var usernames = $(this).data("usernames").split(",");
-  		var times = $(this).data("likes").split(",");
-		  
+  		/*var that = $(this);
+  		var usernames = $(this).data('usernames').split(",");
+  		var times = $(this).data('likes').split(",");*/
+		var usernames = window.settings.likes_by_after.split(",");
+		var times = window.settings.condition_likes.split(",");
   		for(var i=0; i<times.length; i++) 
   		{ 
   			times[i] = +times[i]; 
@@ -113,7 +114,7 @@ $(function() {
   			themsg = usernames[i] + " clicked on George's link";
 
   			setTimeout(function(themsg) {
-  				that.text(parseInt(that.text()) + 1);
+  				//that.text(parseInt(that.text()) + 1);
   				alertify.success(themsg)
 
   			}, times[i], themsg);
