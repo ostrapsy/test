@@ -191,7 +191,7 @@ $(function() {
   		var uage = $('#age').val();
 		var upolitic = [];
 			$("input:checked").each(function() {
-  				vehicles.push($(this).val());
+  				inter.push($(this).val());
 			});
 		
 		/*if ($('input[name="inter"]:checked').val() != null) {           
