@@ -200,13 +200,13 @@ $(function() {
     			}
   		}
   
-		/*if ($('input[name="inter"]:checked').val() != null) {           
+		if (values == [3]) {           
 		   var upolitic = $('input[name="inter"]:checked').val();
 		} else if($('input[name="inter"]:checked').val() == null) {
 			error = 1;
 			errormsg = 'Please state your ideological placement';
-			upolitic ='undefined';
-		}*/
+			values ='undefined';
+		}
 		
 		if ($('input[name="gender"]:checked').val() != null) {           
 		   var ugender = $('input[name="gender"]:checked').val();
