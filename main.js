@@ -189,7 +189,7 @@ $(function() {
 
   		var error = 0;
   		var uage = $('#age').val();
-		/*var upolitic = [];
+		var upolitic = [];
 			$("input[name="inter":checked").each(function() {
   				upolitic.push($(this).val());
 			});
