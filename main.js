@@ -360,7 +360,7 @@ $(function() {
 			  "usergender": window.gender,
 			  "userpolitic": window.politic,
 			  "text": window.description,
-			  "likes": window.task_likes,
+			  "likes": window.settings.task_likes,
 			  "usernames": window.settings.likes_by
 			}
 		  ]
