@@ -86,7 +86,7 @@ $(function() {
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles2").append(html);
 	  //$('#submit_after_profiles').show();
-	  /*$('.userslikes').each(function() {*/
+	  $('.userslikes').each(function() {
 		 users = {
 		  "posts" : [
 			{
@@ -118,7 +118,7 @@ $(function() {
 
   			}, times[i], themsg);
   		} 		
-	  //});
+	  });
 	  $('#submit_after_profiles').on('click',function() {
 		window.location="https://www.google.com";
 	});
