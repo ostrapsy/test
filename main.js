@@ -38,8 +38,9 @@ $(function() {
     settings.condition_1_likes = [7000, 9999999]; // 9
 
     // In condition 2, user will receive 6 likes at the following timepoints (in ms). Default: [10000, 15000,35000,80000,1320000,150000]
-    settings.condition_2_likes = [5000, 10000,12000,19000,28000];  // 5
+    settings.condition_2_likes = [6000, 12000,19000,28000];  // 5
 
+    settings.task_likes = [5000, 10000,12000,19000,28000];  // 5
 	// **Others' likes**     
 	// To keep the total distribution of "likes" constant across conditions, The "likes" received by one group member can be adjusted according to the participant's. By default, the other group member receives 9 "likes" in the participant-ostracism condition, 5 in the participant-inclusion condtion, and 1 in the participant-overinclusion condtion.
 	settings.condition_1_adjusted_likes = [6000, 14000,15000,19000,25000]; // 9
@@ -99,6 +100,21 @@ $(function() {
 	  $("#profiles2").append(html);
 	  //$('#submit_after_profiles').show();
 	  $('.userslikes').each(function() {
+		users = {
+		  "posts" : [
+			{
+			  "avatar": 'avatars/' + window.avatar + '.png',
+			  "username": window.username,
+			  "userage": window.age,
+			  "usergender": window.gender,
+			  "userpolitic": window.politic,
+			  "text": window.description,
+			  "likes": window.settings.condition_likes,
+			  "usernames": window.settings.likes_by
+			}
+		  ]
+		};
+		
   		var that = $(this);
   		var usernames = $(this).data('usernames').split(",");
   		var times = $(this).data('likes').split(",");
@@ -344,7 +360,7 @@ $(function() {
 			  "usergender": window.gender,
 			  "userpolitic": window.politic,
 			  "text": window.description,
-			  "likes": window.settings.condition_likes,
+			  "likes": window.task_likes,
 			  "usernames": window.settings.likes_by
 			}
 		  ]
