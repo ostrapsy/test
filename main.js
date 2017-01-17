@@ -189,11 +189,11 @@ $(function() {
 
   		var error = 0;
   		var uage = $('#age').val();
+		var upolitic = [];
 		
-		
-		if ($('input[name="inter"]:checked').val() != null) {           
-		   var upolitic = $('input[name="inter"]:checked').val();
-		} else if($('input[name="inter"]:checked').val() == null) {
+		if ($('input[id="music"]:checked')) {           
+		   upolitic.push("music");
+		} else if($('input[id="music"]:checked').val() == null) {
 			error = 1;
 			errormsg = 'Please state your interests';
 			upolitic ='undefined';
