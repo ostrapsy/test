@@ -212,7 +212,7 @@ $(function() {
   			}
   		/*	return values;
 		    }*/
-			var upolitic = values[0] + ", " + values[1] + ", " + values[2];
+			var upolitic = values[0] + ", " + values[1] + " and " + values[2];
 		} else if($("input[name=inter]:checked").length != min) {
 			error = 1;
 			errormsg = 'Please state three interests';
