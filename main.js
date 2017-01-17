@@ -183,9 +183,11 @@ $(function() {
   function init_demo() {
 
 	$('#demo').show();
-	$('.checkbox').click(function(){
-   		if ($(this:not(:checked)) && $(".checkbox:checked").length >= 3) {
-       			event.preventDefault()
+	$('input[name="inter"]').on('click', function() {
+    		var nbcheck = $('input[name="inter"]:checked').length;
+    		if(nbcheck > 2) {
+        		console.log('FORBIDEN!!!!');
+        //Do stuffs you want -->
     		}
 	});
   	$('#submit_demo').on('click',function() {
