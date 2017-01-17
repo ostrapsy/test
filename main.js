@@ -211,6 +211,7 @@ $(function() {
     				}
   			}
 			var upolitic = values[0] + ", " + values[1] + ", " + values[2];
+			errormsg = upolitic;
   			return upolitic;
 		    }
 			
