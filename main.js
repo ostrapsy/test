@@ -88,21 +88,16 @@ $(function() {
 	  var names = ['AncaD','Sarah','Arjen','Jane','Nick','Dan','Heather','Ky'];
 	  //var times = [6000,12000,19000,28000];
 	  var times = [2000,4000,6000,8000];
-	  var user;
-	  var ind = 0;
+	  var index = 0;
 	  for(var i=0; i<times.length; i++) 
   		{ 
   			times[i] = +times[i];
-  			user = names[2];
-			ind = ind + 1;
-  			themsg = user + " bajsade";
+  			themsg = names[index] + " bajsade";
 
   			setTimeout(function(hej) {
-  				//that.text(parseInt(that.text()) + 1);
   				alertify.success(themsg)
-
   			}, times[i]);
-			
+			index = index + 1;
   		} 
   	  /*for(var i=0; i<time.lenght; i++)
 	  { 
