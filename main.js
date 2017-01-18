@@ -93,10 +93,10 @@ $(function() {
   	  for(i=0; i<time; i++)
 	  { 
   		 
-  		var themsg = names[i] + " clicked on George's link";
+  		var themsg1 = names[i] + " clicked on George's link";
 
-  		setTimeout(function(hej) {
-  			alertify.success(themsg) }, times[i]);
+  		setTimeout(function(themsg1) {
+  			alertify.success(themsg1) }, times[i]);
 		times[i] = +times[i];
 		
 	  } 		
