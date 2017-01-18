@@ -322,6 +322,11 @@ button.btn.btn-primary {
     padding: 4px;
 }
 
+#continue1 {
+    margin-top: 20px;
+    padding: 4px;
+}
+
 span.badge.badge-custom.userslikes {
     color: #5cff26 !important;
 }
