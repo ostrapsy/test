@@ -85,6 +85,7 @@ $(function() {
 	  $("#profiles2").append(html);
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles2").append(html);
+	  $('.userslikes').each(function() {
 	  var names = ['AncaD','Sarah','Arjen','Jane','Nick','Dan','Heather','Ky'];
 	  //var times = [6000,12000,19000,28000];
 	  var times = [2000,4000,6000,8000];
@@ -93,13 +94,14 @@ $(function() {
 	  for(var i=0; i<antal; i++) 
   		{ 
   			//times[i] = +times[i];
-  			themsg = names[index] + " bajsade " + "Gang nr: " + index;
+  			var themsg = names[index] + " gillar " + "Gang nr: " + index;
 
-  			setTimeout(function(hej) {
+  			setTimeout(function(themsg1) {
   				alertify.success(themsg)
   			}, times[i]);
 			index = index + 1;
   		} 
+	  });
   	  /*for(var i=0; i<time.lenght; i++)
 	  { 
   		time[i] = +time[i]; 
