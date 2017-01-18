@@ -87,7 +87,7 @@ $(function() {
 	  $("#profiles2").append(html);
 	  var usernames = ['AncaD','Sarah','Jane','Arjen'];
 	  var times = [6000, 8000,12000,19000,28000];
-	  var user = usernames;
+	  var user = usernames.split(",");
 	  var time = times;
   	  for(var i=0; i<time.length; i++) { 
   		time[i] = +time[i]; 
