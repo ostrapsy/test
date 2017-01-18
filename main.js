@@ -87,16 +87,16 @@ $(function() {
 	  $("#profiles2").append(html);
 	  var names = ['AncaD','Sarah','Arjen','Jane','Nick','Dan','Heather','Ky'];
 	  var times = [6000,12000,19000,28000];
-	  var time = times.lenght;
 	  
-  	  for(var i=0; i<time; i++)
+  	  for(var i=0; i<times.lenght; i++)
 	  { 
   		times[i] = +times[i]; 
   		themsg = names[i] + " clicked on George's link";
 
   		setTimeout(function(themsg1) {
-  			alertify.success(themsg) }, times[i], themsg);
-	  } 		
+  			alertify.success(themsg) }, times[i]);
+	  } 
+	  
 	  $('#submit_after_profiles').on('click',function() {
 		window.location="https://www.google.com";
 	  });
