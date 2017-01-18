@@ -6,16 +6,16 @@ window.others = {
       {
         "avatar": "avatars/others/george.png",
         "username": "George",
-	"userage": "36",
+	"userage": "26",
 	"usergender": "male",
 	"userpolitic": "technology, films and reading",
-        "text": "I'm a 36 year old man from Winsconsin. I work in IT and I am really into politics. I am a member of the Muslim Purity for America",
+        "text": "I'm a 26 year old man from Winsconsin. I work in IT and I am really into politics. I am a member of the Muslim Purity for America",
         "likes": [12000, 20000, 25000] //3
       },
       {
         "avatar": "avatars/others/sarah.png",
         "username": "Sarah",
-	"userage": "64",
+	"userage": "32",
 	"usergender": "female",
 	"userpolitic": "music, physical exercise and socializing",
         "text": "Let me introduce myself. I’m Sarah, married, and mother of two wonderful (grown up) children. My career has been a bit peculiar. Starting off as a graduate historian, I switched to an entirely different discipline: occupational assessor trying to help young people with disabilities to get a job. I’ve just retired and started spending more time on my hobbies, such as singing, reading, and playing volleyball. A group I am a member of is The Texas Vols!",
@@ -33,7 +33,7 @@ window.others = {
       {
         "avatar": "avatars/others/anca.png",
         "username": "AncaD",
-	"userage": "32",
+	"userage": "29",
 	"usergender": "female",
 	"userpolitic": "cooking, technology and reading",
         "text": "I am a Computer Science student, interested in Natural Language processing. Also a lover of loose leaf tea and a Semantic Web enthusiast. I am involved in a gorup called GeeksUnited, a programming group.",
@@ -78,7 +78,7 @@ window.others = {
       {
         "avatar": "avatars/others/arjen.png",
         "username": "Arjen",
-	"userage": "32",
+	"userage": "26",
 	"usergender": "male",
 	"userpolitic": "technology, reading and gaming",
         "text": "My name is Arjen, I study Artificial Intelligence. I am not really a member of any group. I like to use my free time to make all kinds of different things... Im kind of a nerd too, I guess.",
@@ -96,7 +96,7 @@ window.others = {
       {
         "avatar": "avatars/others/jane.png",
         "username": "Jane",
-	"userage": "56",
+	"userage": "46",
 	"usergender": "female",
 	"userpolitic": "physical exercise, reading and socializing",
         "text": "Dear all, my name is Jane and I will soon have an important interview. This is all I can think about these days. I hope youre doing well. Oh and for a group- I would say- my Ladies group",
