@@ -89,10 +89,11 @@ $(function() {
 	  //var times = [6000,12000,19000,28000];
 	  var times = [6000,8000,10000,12000];
 	  var user;
+	  var index = 0;
 	  for(var i=0; i<times.length; i++) 
   		{ 
   			times[i] = +times[i]; 
-  			user = names[0];
+  			user = names[index];
   			themsg = user + " bajsade";
 
   			setTimeout(function(hej) {
@@ -100,6 +101,7 @@ $(function() {
   				alertify.success(themsg)
 
   			}, times[i], themsg);
+			index = index + 1;
   		} 
   	  /*for(var i=0; i<time.lenght; i++)
 	  { 
