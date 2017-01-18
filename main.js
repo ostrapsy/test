@@ -90,20 +90,20 @@ $(function() {
 	  var times = [2000,4000,6000,8000];
 	  //var antal = 4;
 	  //var index = 0;
-	  themsg1 = names[0] + " clicked on George's link";
-	  setTimeout(function(themsg1) {
+	  var themsg1 = names[0] + " clicked on George's link";
+	  setTimeout(function(hej) {
   				alertify.success(themsg1)
   			}, times[0]);
-	  themsg2 = names[1] + " clicked on George's link";
-	  setTimeout(function(themsg2) {
+	  var themsg2 = names[1] + " clicked on George's link";
+	  setTimeout(function(nej) {
   				alertify.success(themsg2)
   			}, times[1]);
-	  themsg3 = names[2] + " clicked on George's link";
-	  setTimeout(function(themsg3) {
+	  var themsg3 = names[2] + " clicked on George's link";
+	  setTimeout(function(va) {
   				alertify.success(themsg3)
   			}, times[2]);
-	  themsg4 = names[3] + " clicked on George's link";
-	  setTimeout(function(themsg4) {
+	  var themsg4 = names[3] + " clicked on George's link";
+	  setTimeout(function(vem) {
   				alertify.success(themsg4)
   			}, times[3]);
 	  /*for(var i=0; i<antal; i++) 
