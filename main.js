@@ -86,36 +86,15 @@ $(function() {
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles2").append(html);
 	  //$('#submit_after_profiles').show();
-	  $('.userslikes').each(function() {
-		 users = {
-		  "posts" : [
-			{
-			  "avatar": 'avatars/' + window.avatar + '.png',
-			  "username": window.username,
-			  "userage": window.age,
-			  "usergender": window.gender,
-			  "userpolitic": window.politic,
-			  "text": window.description,
-			  "likes": window.settings.condition_likes,
-			  "usernames": window.settings.likes_by_after
-			}
-		  ]
-		};
-		
-  		/*var that = $(this);
-  		var usernames = $(this).data('usernames').split(",");
-  		var times = $(this).data('likes').split(",");*/
-		var usernames = window.settings.likes_by_after.split(",");
-		var times = window.settings.condition_likes.split(",");
-  		for(var i=0; i<times.length; i++) 
-  		{ 
-  			times[i] = +times[i]; 
+	  var usernames = ['AncaD','Sarah','Jane','Nick','Dan','Heather','Ky'];
+	  var times = [6000, 12000,19000,28000];
+  	  for(var i=0; i<times.length; i++) { 
+  		times[i] = +times[i]; 
   			
-  			themsg = usernames[i] + " clicked on George's link";
+  		themsg = usernames[i] + " clicked on George's link";
 
-  			setTimeout(function(themsg) {
-  				//that.text(parseInt(that.text()) + 1);
-  				alertify.success(themsg)
+  		setTimeout(function(themsg) {
+  			alertify.success(themsg)
 
   			}, times[i], themsg);
   		} 		
