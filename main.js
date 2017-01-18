@@ -130,7 +130,7 @@ $(function() {
     
   	  $('#submit_after_profiles').show();
 
-   	  $('#timer').text('00:00');
+   	  $('#timer1').text('00:00');
     
    	  $('#submit_after_profiles').on('click',function() {
 		window.location="https://www.google.com";
