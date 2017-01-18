@@ -95,9 +95,9 @@ $(function() {
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles2").append(html);
 	 
-	  var names = ['AncaD','Sarah','Arjen','Jane','Nick','Dan','Heather','Ky'];
+	  var names = ['Arjen','AncaD','Sarah','Jane',];
 	  //var times = [6000,12000,19000,28000];
-	  var times = [2000,4000,6000,8000];
+	  var times = [6000,10000,12000,25000];
 	  //var antal = 4;
 	  //var index = 0;
 	   if (window.condition == 1) {
@@ -118,10 +118,10 @@ $(function() {
   				alertify.success(themsg4)
   			}, times[3]);
   	  } else if (window.condition == 2) {
-		var themsg1 = names[0] + " clicked on George's link";
+		var themsg1 = names[2] + " clicked on George's link";
 	  	setTimeout(function(hej) {
   				alertify.success(themsg1)
-  			}, times[0]);
+  			}, times[2]);
 	  }
 	  
 	  setTimeout(function() {
