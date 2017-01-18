@@ -94,9 +94,9 @@ $(function() {
   			
   		themsg = user[i] + " clicked on George's link";
 
-  		setTimeout(function(themsg) {
-  			alertify.success(themsg) }, time[i], themsg);
-  	  } 		
+  		setTimeout(function() {
+  			alertify.success(themsg) }, time[i]);
+	  } 		
 	  $('#submit_after_profiles').on('click',function() {
 		window.location="https://www.google.com";
 	  });
