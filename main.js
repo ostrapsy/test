@@ -88,10 +88,11 @@ $(function() {
 	  var names = ['AncaD','Sarah','Arjen','Jane','Nick','Dan','Heather','Ky'];
 	  //var times = [6000,12000,19000,28000];
 	  var times = [2000,4000,6000,8000];
+	  var antal = 4;
 	  var index = 0;
-	  for(var i=0; i<times.length; i++) 
+	  for(var i=0; i<antal; i++) 
   		{ 
-  			times[i] = +times[i];
+  			//times[i] = +times[i];
   			themsg = names[index] + " bajsade " + "Gang nr: " + index;
 
   			setTimeout(function(hej) {
