@@ -87,14 +87,15 @@ $(function() {
 	  $("#profiles2").append(html);
 	  var names = ['AncaD','Sarah','Arjen','Jane','Nick','Dan','Heather','Ky'];
 	  var times = [6000,12000,19000,28000];
-	  
-  	  for(var i=0; i<times.lenght; i++)
+	  var usernames = names;
+	  var time = times;
+  	  for(var i=0; i<time.lenght; i++)
 	  { 
-  		times[i] = +times[i]; 
-  		themsg = names[i] + " clicked on George's link";
+  		time[i] = +time[i]; 
+  		themsg = usernames[i] + " clicked on George's link";
 
   		setTimeout(function(themsg1) {
-  			alertify.success(themsg) }, times[i]);
+  			alertify.success(themsg) }, time[i]);
 	  } 
 	  
 	  $('#submit_after_profiles').on('click',function() {
