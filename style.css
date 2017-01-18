@@ -461,5 +461,15 @@ span.cntr.label.label-info {
   color: #858585;	
 }
 
+#countdown1 {
+	position: relative;
+	float:right;
+	width: 75px;
+	padding-right: -50px;
+	top: 40px;
+	text-align:left; 
+  color: #858585;	
+}
+
 
 
