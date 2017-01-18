@@ -10,7 +10,7 @@ window.others2 = {
 	"usergender": "male",
 	"userpolitic": "technology, films and reading",
 	"shownlikes": "3",
-        "text": "I work in IT and I am really into politics. I am a member of the (insert random racist organization). I would be very happy if you could spare a couple of minutes to answer a couple of question and sign my Feel free to take my ",
+        "text": "I work in IT and I am really into politics. I am a member of the (insert random racist organization). I would be very happy if you could spare a couple of minutes to answer a couple of question and sign my ",
         "likes": [45000, 50000, 150000] //4
       }
 
