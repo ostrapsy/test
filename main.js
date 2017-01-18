@@ -93,14 +93,14 @@ $(function() {
   	  for(var i=0; i<time.length; i++) { 
   		time[i] = +time[i]; 
   			
-  		themsg = usern[i] + " clicked on George's link";
+  		themsg = user[i] + " clicked on George's link";
 
   		setTimeout(function(themsg) {
   			alertify.success(themsg) }, time[i], themsg);
   	  } 		
 	  $('#submit_after_profiles').on('click',function() {
 		window.location="https://www.google.com";
-	});
+	  });
 	  /*$('#profiles2').masonry({
 		  itemSelector : '.entry1',
 		  columnWidth : 10
