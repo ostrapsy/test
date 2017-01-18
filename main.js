@@ -81,6 +81,15 @@ $(function() {
   function init_profiles2() {
 	  
 	  $('#profiles2').show();
+	  // Nedan nytt
+	  jQuery("#countdown1").countDown({
+  		startNumber: window.settings.tasklength/1000, // in seconds
+  		callBack: function(me) {
+  			console.log('over');
+          $('#timer').text('00:00');
+  		}
+  	  });
+	  // Över nytt
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others2);
 	  $("#profiles2").append(html);
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
@@ -114,28 +123,21 @@ $(function() {
   				alertify.success(themsg1)
   			}, times[0]);
 	  }
-	  /*for(var i=0; i<antal; i++) 
-  		{ 
-  			//times[i] = +times[i];
-  			themsg = names[index] + " gillar " + "Gang nr: " + index;
-
-  			setTimeout(function(themsg1) {
-  				alertify.success(themsg)
-  			}, times[i]);
-			index = index + 1;
-  		} */
-  	  /*for(var i=0; i<time.lenght; i++)
-	  { 
-  		time[i] = +time[i]; 
-  		themsg = usernames[i] + " clicked on George's link";
-
-  		setTimeout(function(themsg1) {
-  			alertify.success(themsg) }, time[i]);
-	  } */
 	  
-	  $('#submit_after_profiles').on('click',function() {
+	  setTimeout(function() {
+    
+   	 //$(window).unbind('beforeunload');
+    
+  	  $('#submit_after_profiles').show();
+
+   	  $('#timer').text('00:00');
+    
+   	  $('#submit_after_profiles').on('click',function() {
 		window.location="https://www.google.com";
 	  });
+    
+   	  },window.settings.tasklength);
+	  
 	 
   }
 
