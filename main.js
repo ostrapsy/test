@@ -85,8 +85,7 @@ $(function() {
 	  $("#profiles2").append(html);
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles2").append(html);
-	  //$('#submit_after_profiles').show();
-	  var usernames = ['AncaD','Sarah','Jane','Nick','Dan','Heather','Ky'];
+	  /*var usernames = ['AncaD','Sarah','Jane','Nick','Dan','Heather','Ky'];
 	  var times = [6000, 12000,19000,28000];
 	  var user = usernames.split(",");
 	  var time = times.split(",");
@@ -97,7 +96,7 @@ $(function() {
 
   		setTimeout(function(themsg) {
   			alertify.success(themsg) }, time[i], themsg);
-  	  } 		
+  	  } 		*/
 	  $('#submit_after_profiles').on('click',function() {
 		window.location="https://www.google.com";
 	  });
