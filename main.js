@@ -91,7 +91,7 @@ $(function() {
 	  var times = [2000,4000,6000,8000];
 	  //var antal = 4;
 	  //var index = 0;
-	   if ((window.condition == 1) {
+	   if (window.condition == 1) {
 	  	var themsg1 = names[0] + " clicked on George's link";
 	  	setTimeout(function(hej) {
   				alertify.success(themsg1)
