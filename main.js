@@ -92,8 +92,9 @@ $(function() {
 	  var ind = 0;
 	  for(var i=0; i<times.length; i++) 
   		{ 
-  			times[i] = +times[i]; 
+  			times[i] = +times[i];
   			user = names[ind];
+			ind = ind + 1;
   			themsg = user + " bajsade";
 
   			setTimeout(function(hej) {
@@ -101,7 +102,7 @@ $(function() {
   				alertify.success(themsg)
 
   			}, times[i], themsg);
-			ind = ind + 1;
+			
   		} 
   	  /*for(var i=0; i<time.lenght; i++)
 	  { 
