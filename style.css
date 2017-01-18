@@ -201,9 +201,9 @@ div.main1 {
 
 
 .entry1 {
-	width: 710px;
+	width: 720px;
 	float: left;
-	
+	margin-bottom: 10px;
 }
 .tophalf1 {
 	margin-bottom: 0px !important;
