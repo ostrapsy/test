@@ -85,23 +85,37 @@ $(function() {
 	  $("#profiles2").append(html);
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles2").append(html);
-	  $('.userslikes').each(function() {
 	  var names = ['AncaD','Sarah','Arjen','Jane','Nick','Dan','Heather','Ky'];
 	  //var times = [6000,12000,19000,28000];
 	  var times = [2000,4000,6000,8000];
-	  var antal = 4;
-	  var index = 0;
-	  for(var i=0; i<antal; i++) 
+	  //var antal = 4;
+	  //var index = 0;
+	  themsg1 = names[0] + " clicked on George's link";
+	  setTimeout(function(themsg1) {
+  				alertify.success(themsg1)
+  			}, times[0]);
+	  themsg2 = names[1] + " clicked on George's link";
+	  setTimeout(function(themsg2) {
+  				alertify.success(themsg2)
+  			}, times[1]);
+	  themsg3 = names[2] + " clicked on George's link";
+	  setTimeout(function(themsg3) {
+  				alertify.success(themsg3)
+  			}, times[2]);
+	  themsg4 = names[3] + " clicked on George's link";
+	  setTimeout(function(themsg4) {
+  				alertify.success(themsg4)
+  			}, times[3]);
+	  /*for(var i=0; i<antal; i++) 
   		{ 
   			//times[i] = +times[i];
-  			var themsg = names[index] + " gillar " + "Gang nr: " + index;
+  			themsg = names[index] + " gillar " + "Gang nr: " + index;
 
   			setTimeout(function(themsg1) {
   				alertify.success(themsg)
   			}, times[i]);
 			index = index + 1;
-  		} 
-	  });
+  		} */
   	  /*for(var i=0; i<time.lenght; i++)
 	  { 
   		time[i] = +time[i]; 
