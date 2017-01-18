@@ -86,13 +86,14 @@ $(function() {
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles2").append(html);
 	  var names = ['AncaD','Sarah','Arjen','Jane','Nick','Dan','Heather','Ky'];
-	  var times = [6000,12000,19000,28000];
-	  var usernames = names;
+	  //var times = [6000,12000,19000,28000];
+	  var times = [6000,8000,10000,12000];
+	  var use = names;
 	  for(var i=0; i<times.length; i++) 
   		{ 
   			times[i] = +times[i]; 
   			
-  			themsg = usernames[i] + " bajsade";
+  			themsg = use[i] + " bajsade";
 
   			setTimeout(function(hej) {
   				//that.text(parseInt(that.text()) + 1);
