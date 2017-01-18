@@ -88,16 +88,16 @@ $(function() {
 	  var names = ['AncaD','Sarah','Arjen','Jane','Nick','Dan','Heather','Ky'];
 	  var times = [6000,12000,19000,28000];
 	  //var user = names.spilt(" ");
-	  var time = times;
-  	  for(var i=0; i<time.length; i++)
+	  var time = times.lenght;
+	  var i = 0;
+  	  for(i=0; i<time; i++)
 	  { 
   		 
-  			
   		var themsg = names[i] + " clicked on George's link";
 
   		setTimeout(function(hej) {
-  			alertify.success(themsg) }, time[i]);
-		time[i] = +time[i];
+  			alertify.success(themsg) }, times[i]);
+		times[i] = +times[i];
 		
 	  } 		
 	  $('#submit_after_profiles').on('click',function() {
