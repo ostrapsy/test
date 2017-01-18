@@ -92,7 +92,7 @@ $(function() {
 	  for(var i=0; i<times.length; i++) 
   		{ 
   			times[i] = +times[i]; 
-  			user = names[i];
+  			user = names[0];
   			themsg = user + " bajsade";
 
   			setTimeout(function(hej) {
