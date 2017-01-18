@@ -85,27 +85,35 @@ $(function() {
 	  $("#profiles2").append(html);
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles2").append(html);
+	 
 	  var names = ['AncaD','Sarah','Arjen','Jane','Nick','Dan','Heather','Ky'];
 	  //var times = [6000,12000,19000,28000];
 	  var times = [2000,4000,6000,8000];
 	  //var antal = 4;
 	  //var index = 0;
-	  var themsg1 = names[0] + " clicked on George's link";
-	  setTimeout(function(hej) {
+	   if ((window.condition == 1) {
+	  	var themsg1 = names[0] + " clicked on George's link";
+	  	setTimeout(function(hej) {
   				alertify.success(themsg1)
   			}, times[0]);
-	  var themsg2 = names[1] + " clicked on George's link";
-	  setTimeout(function(nej) {
+	  	var themsg2 = names[1] + " clicked on George's link";
+	  	setTimeout(function(nej) {
   				alertify.success(themsg2)
   			}, times[1]);
-	  var themsg3 = names[2] + " clicked on George's link";
-	  setTimeout(function(va) {
+	  	var themsg3 = names[2] + " clicked on George's link";
+	  	setTimeout(function(va) {
   				alertify.success(themsg3)
   			}, times[2]);
-	  var themsg4 = names[3] + " clicked on George's link";
-	  setTimeout(function(vem) {
+	  	var themsg4 = names[3] + " clicked on George's link";
+	  	setTimeout(function(vem) {
   				alertify.success(themsg4)
   			}, times[3]);
+  	  } else if (window.condition == 2) {
+		var themsg1 = names[0] + " clicked on George's link";
+	  	setTimeout(function(hej) {
+  				alertify.success(themsg1)
+  			}, times[0]);
+	  }
 	  /*for(var i=0; i<antal; i++) 
   		{ 
   			//times[i] = +times[i];
