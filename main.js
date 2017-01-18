@@ -88,12 +88,12 @@ $(function() {
 	  var names = ['AncaD','Sarah','Arjen','Jane','Nick','Dan','Heather','Ky'];
 	  //var times = [6000,12000,19000,28000];
 	  var times = [6000,8000,10000,12000];
-	  var use = names;
+	  var user;
 	  for(var i=0; i<times.length; i++) 
   		{ 
   			times[i] = +times[i]; 
-  			
-  			themsg = use[i] + " bajsade";
+  			user = names[i];
+  			themsg = user + " bajsade";
 
   			setTimeout(function(hej) {
   				//that.text(parseInt(that.text()) + 1);
