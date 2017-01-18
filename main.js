@@ -86,19 +86,18 @@ $(function() {
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles2").append(html);
 	  //$('#submit_after_profiles').show();
-	  var usernames = [[AncaD],[Sarah],[Jane],[Nick],[Dan]];
+	  var usernames = ['AncaD','Sarah','Jane','Nick','Dan','Heather','Ky'];
 	  var times = [6000, 12000,19000,28000];
-  	  for(var i=0; i<times.length; i++) { 
-  		times[i] = +times[i]; 
+	  var user = usernames.split(",");
+	  var time = times.split(",");
+  	  for(var i=0; i<time.length; i++) { 
+  		time[i] = +time[i]; 
   			
-  		themsg = usernames[i] + " clicked on George's link";
+  		themsg = usern[i] + " clicked on George's link";
 
   		setTimeout(function(themsg) {
-  			alertify.success(themsg)
-
-  			}, times[i], themsg);
-  		} 		
-	  });
+  			alertify.success(themsg) }, time[i], themsg);
+  	  } 		
 	  $('#submit_after_profiles').on('click',function() {
 		window.location="https://www.google.com";
 	});
