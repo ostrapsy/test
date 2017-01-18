@@ -91,19 +91,16 @@ $(function() {
 	  
   	  for(var i=0; i<time; i++)
 	  { 
-  		//times[i] = +times[i]; 
-  		themsg1 = names[i] + " clicked on George's link";
+  		times[i] = +times[i]; 
+  		themsg = names[i] + " clicked on George's link";
 
   		setTimeout(function(themsg1) {
-  			alertify.success(themsg1) }, times[i], themsg1);
+  			alertify.success(themsg) }, times[i], themsg);
 	  } 		
 	  $('#submit_after_profiles').on('click',function() {
 		window.location="https://www.google.com";
 	  });
-	  /*$('#profiles2').masonry({
-		  itemSelector : '.entry1',
-		  columnWidth : 10
-		});*/
+	 
   }
 
   // **Slide:** **Username**       
