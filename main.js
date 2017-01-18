@@ -83,7 +83,7 @@ $(function() {
 	  $('#profiles2').show();
 	  // Nedan nytt
 	  jQuery("#countdown1").countDown({
-  		startNumber: window.settings.tasklength/1000, // in seconds
+  		startNumber: 45, // in seconds
   		callBack: function(me) {
   			console.log('over');
           $('#timer').text('00:00');
@@ -136,7 +136,7 @@ $(function() {
 		window.location="https://www.google.com";
 	  });
     
-   	  },window.settings.tasklength);
+   	  },45000);
 	  
 	 
   }
