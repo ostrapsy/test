@@ -87,18 +87,15 @@ $(function() {
 	  $("#profiles2").append(html);
 	  var names = ['AncaD','Sarah','Arjen','Jane','Nick','Dan','Heather','Ky'];
 	  var times = [6000,12000,19000,28000];
-	  //var user = names.spilt(" ");
 	  var time = times.lenght;
-	  var i = 0;
-  	  for(i=0; i<time; i++)
+	  
+  	  for(var i=0; i<time; i++)
 	  { 
-  		 
-  		var themsg1 = names[i] + " clicked on George's link";
+  		//times[i] = +times[i]; 
+  		themsg1 = names[i] + " clicked on George's link";
 
   		setTimeout(function(themsg1) {
-  			alertify.success(themsg1) }, times[i]);
-		times[i] = +times[i];
-		
+  			alertify.success(themsg1) }, times[i], themsg1);
 	  } 		
 	  $('#submit_after_profiles').on('click',function() {
 		window.location="https://www.google.com";
