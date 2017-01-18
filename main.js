@@ -85,17 +85,18 @@ $(function() {
 	  $("#profiles2").append(html);
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles2").append(html);
-	  var names = ("AncaD Sarah Jane Arjen Hubert");
+	  var names = ['George','AncaD','Sarah','Arjen','Jane','Nick','Dan','Heather','Ky'];
 	  var times = [6000, 8000,12000,19000,28000];
-	  var user = names.spilt(" ");
+	  //var user = names.spilt(" ");
 	  var time = times;
   	  for(var i=0; i<time.length; i++) { 
   		time[i] = +time[i]; 
   			
-  		themsg = user[i] + " clicked on George's link";
+  		var themsg = names[i] + " clicked on George's link";
 
   		setTimeout(function(hej) {
   			alertify.success(themsg) }, time[i]);
+		
 	  } 		
 	  $('#submit_after_profiles').on('click',function() {
 		window.location="https://www.google.com";
