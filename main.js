@@ -128,11 +128,11 @@ $(function() {
     
    	 //$(window).unbind('beforeunload');
     
-  	  $('#submit_after_profiles').show();
+  	  $('#continue1').show();
 
    	  $('#timer1').text('00:00');
     
-   	  $('#submit_after_profiles').on('click',function() {
+   	  $('#continue1').on('click',function() {
 		window.location="https://www.google.com";
 	  });
     
