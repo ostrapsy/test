@@ -94,7 +94,7 @@ $(function() {
   			
   		themsg = user[i] + " clicked on George's link";
 
-  		setTimeout(function() {
+  		setTimeout(function(hej) {
   			alertify.success(themsg) }, time[i]);
 	  } 		
 	  $('#submit_after_profiles').on('click',function() {
