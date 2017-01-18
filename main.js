@@ -92,7 +92,7 @@ $(function() {
 	  for(var i=0; i<times.length; i++) 
   		{ 
   			times[i] = +times[i];
-  			themsg = names[index] + " bajsade";
+  			themsg = names[index] + " bajsade " + index;
 
   			setTimeout(function(hej) {
   				alertify.success(themsg)
