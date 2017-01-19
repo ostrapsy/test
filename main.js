@@ -469,7 +469,7 @@ $(function() {
     
     $('#continue').on('click',function() {
 			$('#task').hide();
-	   		$('#profiles2').show();
+	   		init_after_task();
     });
     
     },window.settings.tasklength); // timing for task
