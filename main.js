@@ -67,7 +67,9 @@ $(function() {
   // With instructions regarding the task. The intro container is shown, the continue calls the next slide when clicked.
   
   function init_intro() {
-  	$('#intro').show();
+	  var modal = document.getElementById('myModal');
+  			modal.style.display = "block";
+  	//$('#intro').show();
   	$('#submit_intro').on('click',function() {
 			$('#intro').hide();
 			//$('#mode').show();
