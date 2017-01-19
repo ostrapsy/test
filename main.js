@@ -79,10 +79,14 @@ $(function() {
 	$('#after_task').show();
   	$('#submit_after_task').on('click',function() {
 		$('#after_task').hide();
-		init_profiles2();
+		init_profiles1();
 	});
   }
-	
+ 
+  function init_profiles1() {
+	  var tpl = $('#newtmp').html(),html = Mustache.to_html(tpl, others2);
+	  $("#profiles1").append(html);
+  }
   function init_profiles2() {
 	  
 	  $('#profiles2').show();
