@@ -466,9 +466,9 @@ $(function() {
     $('#continue').show();
 
     $('#timer').text('00:00');
-    //var modal = document.getElementById('myModal');
+    
     $('#continue').on('click',function() {
-			//$('#task').hide();
+			$('#task').hide();
 	   		var modal = document.getElementById('myModal');
   			modal.style.display = "block";
     });
