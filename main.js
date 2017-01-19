@@ -99,7 +99,7 @@ $(function() {
 		  ]
 		};
 	  $('#profiles').show();
-	  var tpl = $('#newtmp').html(),html = Mustache.to_html(tpl, others2);
+	  var tpl = $('#newtmp').html(),html = Mustache.to_html(tpl, users);
 	  $("#profiles").append(html);
   }
   function init_profiles2() {
