@@ -58,14 +58,15 @@ You can edit this text using basic HTML elements for styling (e.g., <br>, <h3>).
 */ 
 --> <h3>Welcome to this study</h3>
 
-  You will complete a number of simple tasks, together with other people <br>
-  who just read the same article as you. You will be connected with these <br>
-  people via the internet.<br><br>
-  First, all participants in the study will indicate some background information.<br>
-  All participants will then select personal "avatars" and finally all participants will<br>
-  write short texts about what you thought about the article you just read. <br><br>
-  You will spend 3 minutes with the other people. During this time, <br>
-  you will be able to read and react to each-other's profiles. <br><br>
+  You will complete a number of simple tasks, together with other people, <br>
+  with whom you will be connected via the internet. <br>
+  <br><br>
+  First, all participants will provide some information about themselves,<br>
+  such as namning interrests and writing a short personal introduction,<br>
+  and thus creating a small profile.<br>
+  <br><br>
+  You will then connect with other people in your group. During this time,<br>
+  you will be able to read and react to each other's profiles. <br><br>
   Specific instructions will follow.<br><br>
   <b>Thank you!</b><br><br>
   <button type="submit" id="submit_intro">Continue</button>
@@ -85,7 +86,7 @@ You can edit the instructions text for entering usernames below.
 -->
 	<h3>Please enter your name</h3>
 	Could be your first name, nickname or initials...<br>
-	(will be visible to the other participants)<br><br>
+	<br>
 	
 	<input type="text" size="10" maxlength="10" style="width: 300px;" id="username"  autocomplete="off" /><br>	<br>
 	<button type="submit"  id="submit_username">Submit</button>
@@ -169,8 +170,8 @@ You can edit the instructions text.
 
 */ 
 -->	<h3>Please introduce yourself </h3>
-	Please write a paragraph in which you present yourself and state <br>
-	your thoughts on the issue treated in the article you just read. <br>
+	Please write a paragraph in which you introduce yourself to the rest of the group. <br>
+	Write something you would like to tell about yourself – anything you want to share. <br>
 	<br><br>	
 	<textarea id="description" autocomplete="off" /></textarea><br>
 	<span id="count">Characters left: 400</span><br><br>
@@ -189,17 +190,16 @@ You can edit the instructions text. The prompt to try and form an impression of 
 
 */ 
 -->  <h3>Group Introduction</h3>
-  Soon after connecting, you should be able to see the other people's profiles. <br>
-  You can read and react to the short presentation they wrote by clicking a <br>
-  "like" button, similar to the "like" button on Facebook ("favorite" on Twitter,<br> 
-  &hearts; in Tumblr and Instagram, etc.) <br>
+  Soon after connecting, you should be able to see a limited version the other people's profiles. <br>
+  If you want to know more about a person, you can click on a "Interested" button, similar to the<br>
+  "like" button on Facebook ("favorite" on Twitter, &hearts; in Tumblr and Instagram, etc.)<br>
   <br>
   Even though your interaction is minimal, please try to form an impression of the <br>
   people in the group. Try to imagine them in real life - how they might look <br>
-  or sound, what kind of people they are, how you would get along with them.
+  or sound, what kind of people they are and how you would get along with them.
   <br><br>
-  The task will last 3 minutes and is very important to the study, so please be attentive, <br>
-  without switching pages, or doing unrelated tasks. Questions about the other people <br>might follow.
+  The task will last at least 30 seconds and is very important to the study, so please be attentive, <br>
+  without switching pages, or doing unrelated tasks. Questions about the other people might follow.
   <br><br><b>If these instructions are clear, you can proceed to log in.</b><br>
   <br>
   <button type="submit"  id="submit_fb_intro">Log in</button>
@@ -207,7 +207,7 @@ You can edit the instructions text. The prompt to try and form an impression of 
 
 <div id="fb_login" style="display:none;" class="instr">
   <h3>Establishing connection</h3>
-  Please wait while you are being connected to the other participants in your group.<br><br>
+  Please wait while you are being connected to the other participants in your group...<br><br>
   <img class="load" src='ajax-loader.gif' id="loader">
   <div id="msg_all_done" style="display:none;">
   <br>
@@ -218,7 +218,9 @@ You can edit the instructions text. The prompt to try and form an impression of 
 
 <div id="after_task" style="display:none;" class="instr">
 	<h3>Full profiles</h3>
-	You will now be able to view the full profile of the users who showed interest in you.<br><br>
+	You will now be able to view the full profile of the users who<br>
+	showed interest in you. Try to compare your first impression<br>
+	of these users with what they wrote about themselves.<br><br>
 	<button type="submit"  id="submit_after_task">Continue</button>
 </div>
 <!--
@@ -343,7 +345,7 @@ You can edit the instructions text.
     </div>	
 
     <div class="bottomhalf">
-    	Likes <span class="badge badge-custom userslikes" data-likes="{{likes}}" data-usernames="{{usernames}}">0</span>
+    	Interests <span class="badge badge-custom userslikes" data-likes="{{likes}}" data-usernames="{{usernames}}">0</span>
 	
     </div>
     </div>
@@ -371,7 +373,7 @@ You can edit the instructions text.
     </div>	
 
     <div class="bottomhalf">
-    	Likes <span class="badge badge-custom otherslikes" data-likes="{{likes}}">0</span>
+    	Interests <span class="badge badge-custom otherslikes" data-likes="{{likes}}">0</span>
     	<button type="submit" class="btn pull-right btn-like btn-custom btn-deround">Interested <i class="icon-thumbs-up icon-white"></i></button>
     </div>
 
