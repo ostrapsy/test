@@ -375,7 +375,7 @@ $(function() {
 			  "usergender": window.gender,
 			  "userpolitic": window.politic,
 			  "text": window.description,
-			  "likes": window.settings.task_likes,
+			  "likes": window.settings.condition_likes,
 			  "usernames": window.settings.likes_by
 			}
 		  ]
