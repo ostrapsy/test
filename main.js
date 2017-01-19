@@ -472,9 +472,7 @@ $(function() {
     
     $('#continue').on('click',function() {
 			$('#task').hide();
-	    		$('#mode').show();
-	   		var modal = document.getElementById('myModal');
-  			modal.style.display = "block";
+	   		$('#profiles2').show();
     });
     
     },window.settings.tasklength); // timing for task
