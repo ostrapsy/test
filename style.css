@@ -484,7 +484,6 @@ span.cntr.label.label-info {
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     top: 0;
-    right: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
