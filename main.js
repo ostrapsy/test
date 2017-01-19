@@ -469,7 +469,7 @@ $(function() {
     
     $('#continue').on('click',function() {
 			$('#task').hide();
-  			init_after_task();
+  			modal.style.display = "block";
     });
     
     },window.settings.tasklength); // timing for task
