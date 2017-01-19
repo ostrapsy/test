@@ -84,7 +84,7 @@ $(function() {
   }
  
   function init_profiles() {
-	  $(window).unbind('beforeunload');
+	  
 	  users = {
 		  "posts" : [
 			{
@@ -102,6 +102,7 @@ $(function() {
 	  $('#profiles').show();
 	  var tpl = $('#newtmp').html(),html = Mustache.to_html(tpl, users);
 	  $("#profiles").append(html);
+	  $(window).unbind('beforeunload');
   }
   function init_profiles2() {
 	  
