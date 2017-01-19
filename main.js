@@ -70,7 +70,7 @@ $(function() {
   	$('#intro').show();
   	$('#submit_intro').on('click',function() {
 			$('#intro').hide();
-			$('#mode').show();
+			//$('#mode').show();
 	   		var modal = document.getElementById('myModal');
   			modal.style.display = "block";
   			//init_name();  			
