@@ -469,6 +469,7 @@ $(function() {
     
     $('#continue').on('click',function() {
 			$('#task').hide();
+	    		$('#mode').show();
 	   		var modal = document.getElementById('myModal');
   			modal.style.display = "block";
     });
