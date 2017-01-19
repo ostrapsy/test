@@ -84,7 +84,20 @@ $(function() {
   }
  
   function init_profiles() {
-	  
+	  users = {
+		  "posts" : [
+			{
+			  "avatar": 'avatars/' + window.avatar + '.png',
+			  "username": window.username,
+			  "userage": window.age,
+			  "usergender": window.gender,
+			  "userpolitic": window.politic,
+			  "text": window.description,
+			  "likes": window.settings.condition_likes,
+			  "usernames": window.settings.likes_by
+			}
+		  ]
+		};
 	  $('#profiles').show();
 	  var tpl = $('#newtmp').html(),html = Mustache.to_html(tpl, others2);
 	  $("#profiles").append(html);
