@@ -84,6 +84,7 @@ $(function() {
   }
  
   function init_profiles1() {
+	  $('#profiles1').show();
 	  var tpl = $('#newtmp').html(),html = Mustache.to_html(tpl, others2);
 	  $("#profiles1").append(html);
   }
