@@ -84,6 +84,7 @@ $(function() {
   }
  
   function init_profiles() {
+	  $(window).unbind('beforeunload');
 	  users = {
 		  "posts" : [
 			{
