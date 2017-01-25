@@ -103,6 +103,7 @@ $(function() {
 	  var tpl = $('#newtmp').html(),html = Mustache.to_html(tpl, users);
 	  $("#profiles").append(html);
 	  $(window).unbind('beforeunload');
+	  document.getElementById("link").href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description);
   }
   function init_profiles2() {
 	  
