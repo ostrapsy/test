@@ -225,9 +225,9 @@ $(function() {
 
   		var error = 0;
   		var uage = $('#age').val();
-		var min = 3;
+		var min = 1;
   			
-		if ($("input[name=inter]:checked").length == min) {           
+		if ($("input[name=inter]:checked").length >= min) {           
 		   /*function getCheckboxValues(interForm) {*/
   			var values = [];
   			var inters = interForm.inter;
@@ -239,10 +239,16 @@ $(function() {
   			}
   		/*	return values;
 		    }*/
-			var upolitic = values[0] + ", " + values[1] + " and " + values[2];
-		} else if($("input[name=inter]:checked").length != min) {
+			if (values.length == 1) {
+				var upolitic = values[0];
+			} else if (values.length == 2) {
+				var upolitic = values[0] + " and " + values[1];
+			} else if (values.length == 3) {
+				var upolitic = values[0] + ", " + values[1] + " and " + values[2];
+			}
+		} else if($("input[name=inter]:checked").length < min) {
 			error = 1;
-			errormsg = 'Please state three interests';
+			errormsg = 'Please state at least one interest';
 			upolitic ='undefined';
 		}
 		
