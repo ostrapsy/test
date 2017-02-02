@@ -8,7 +8,7 @@ window.others = {
         "username": "George",
 	"userage": "26",
 	"usergender": "male",
-	"userpolitic": "technology, films and reading",
+	"userpolitic": "technology",
         "text": "I'm a 26 year old man from Winsconsin. I work in IT and I am really into politics. I am a member of the Muslim Purity for America",
         "likes": [12000, 20000, 25000] //3
       },
@@ -26,7 +26,7 @@ window.others = {
         "username": "John",
 	"userage": "57",
 	"usergender": "male",
-	"userpolitic": "films, cooking and cars",
+	"userpolitic": "films and cars",
         "text": "Hi there, I’m 57 years old, married, with two kids. I’ve been a computer programmer in the states for about 30 years, but don’t worry: I don’t have the dusty haircut, oversized buttoned shirt and nerdie big frame glasses. I am a member of a group called World War Ethusiasts- we recreate and discuss things a war related. Cheers, John",
 		"likes": [5000, 16000, 22000, 25000] //4
       },
@@ -35,7 +35,7 @@ window.others = {
         "username": "AncaD",
 	"userage": "29",
 	"usergender": "female",
-	"userpolitic": "cooking, technology and reading",
+	"userpolitic": "football, technology and reading",
         "text": "I am a Computer Science student, interested in Natural Language processing. Also a lover of loose leaf tea and a Semantic Web enthusiast. I am involved in a gorup called GeeksUnited, a programming group.",
         "likes": [3000, 7000, 14000, 24000, 27000] //5
       },
@@ -53,7 +53,7 @@ window.others = {
         "username": "Mary",
 	"userage": "49",
 	"usergender": "female",
-	"userpolitic": "dancing, cooking and socializing",
+	"userpolitic": "yoga, cooking and socializing",
         "text": "My name is Mary and I am 49 years old. I have a husband and 2 grown sons. My family and I lived in different countries. Our sons attended international schools wherever we went and since moving to China, I found work at those schools as well. Besides roaming around the world, I like playing games. Board games, cards, black jack or poker, mah jong, or silly games on Facebook, jig saws, basically anything. For a group I am a part of, I think the best one is my tuesday night Poker group",
         "likes": [2000, 18000, 26000] //3
       },
@@ -62,7 +62,7 @@ window.others = {
         "username": "Lauren",
 	"userage": "24",
 	"usergender": "female",
-	"userpolitic": "physical exercise, dancing and socializing",
+	"userpolitic": "shopping and socializing",
         "text": "I’m Lauren, I love to hang out with friends and go shopping. Just doing some online studies here!",
         "likes": [3000, 11000, 22000, 30000] //4
       },
@@ -71,7 +71,7 @@ window.others = {
         "username": "Ky",
 	"userage": "19",
 	"usergender": "female",
-	"userpolitic": "music, films and technology",
+	"userpolitic": "yoga, films and surfing the web",
         "text": "Hey, guys. I'm 19, native Korean. I've been in America for about four years now.I consider myself pretty nice, though not a total angel. I just like being friendly to people I meet. In my spare time, I like making all kinds of friends, having conversations about whatever, looking at paintings, using makeup, reading, singing (show choir representtt!). My group has to be my choir: About the Town! Enjoy your day, stay out of trouble. <3",
         "likes": [4000, 9000, 14000, 21000, 24000, 27000, 29000] //7
       },
@@ -89,14 +89,14 @@ window.others = {
         "username": "Heather",
 	"userage": "21",
 	"usergender": "female",
-	"userpolitic": "music, reading and socializing",
+	"userpolitic": "music and reading",
         "text": "Just now I'm finishing up my first year of a difficult science curriculum in university. I am part of a student group there. I also work at a cosmetics counter as a part-time thing and earn some money online in my free time. I have a lot planned for my future, and it's really exciting. I want to grow up and be a doctor with a family of lots of little dogs. It'll be fantastic.",
         "likes": [3000, 15000, 19000, 22000, 29000] //5
       },
       {
         "avatar": "avatars/others/jane.png",
         "username": "Jane",
-	"userage": "46",
+	"userage": "36",
 	"usergender": "female",
 	"userpolitic": "physical exercise, reading and socializing",
         "text": "Dear all, my name is Jane and I will soon have an important interview. This is all I can think about these days. I hope youre doing well. Oh and for a group- I would say- my Ladies group",
