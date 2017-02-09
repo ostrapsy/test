@@ -4,7 +4,7 @@
 window.others2 = {
   "posts1" : [
       {
-        "avatar": "avatars/others/george.png",
+        "avatar": "avatars/others/george1.png",
         "username": "George",
 	"userage": "26",
 	"usergender": "male",
