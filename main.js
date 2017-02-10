@@ -143,7 +143,7 @@ $(function() {
 	  $(window).unbind('beforeunload');
 	  document.getElementById("link").href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+'&w='+window.words;
   }
-  function init_profiles2() {
+  /*function init_profiles2() {
 	  
 	  $('#profiles2').show();
 	  // Nedan nytt
@@ -204,7 +204,7 @@ $(function() {
    	  },45000);
 	  
 	 
-  }
+  }*/
 
   // **Slide:** **Username**       
   // Note: Only alphanumeric usernames without spaces are accepted
