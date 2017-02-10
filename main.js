@@ -80,7 +80,7 @@ $(function() {
 
     
   	$('#submit_words').on('click',function() {
-
+		$(window).unbind('beforeunload');
   		var error = 0;
 		
 		var word1 = $('#word1').val();
