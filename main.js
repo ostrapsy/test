@@ -74,6 +74,44 @@ $(function() {
   	});	
   }
 	
+  function init_words() {
+
+  	$('#words').show();
+
+    
+  	$('#submit_words').on('click',function() {
+
+  		var error = 0;
+		
+		var word1 = $('#word1').val();
+		var word2 = $('#word2').val();
+		var word3 = $('#word3').val();
+		var word4 = $('#word4').val();
+		var word5 = $('#word5').val();
+
+  		if(word1 == "" || word2 == "" || word3 == "" || word4 == "" || word5 == "") {
+  			error = 1;
+  			errormsg = 'Please enter a word in each box';
+  			//uname = "undefined";
+  		}
+  		if(not_alphanumeric(word1 || word2 || word3 || word4 || word5)) {
+  			error = 1;
+  			errormsg = 'Please only letters (and no spaces)';
+  		}  		
+
+  		if(error == 0) {
+			$('#words').hide();
+			//window.username = $('#username').val();
+			window.words = word1 + " " + word2 + " " + word3 + " " + word4 + " " + word5;
+  			init_after_task();  			
+  		} else {
+  			alertify.log(errormsg,"error");
+  		}
+
+
+  	});
+  }	
+	
   function init_after_task() {
 
 	$('#after_task').show();
@@ -497,7 +535,7 @@ $(function() {
     
     $('#continue').on('click',function() {
 			$('#task').hide();
-	   		init_after_task();
+	   		init_words();
     });
     
     },window.settings.tasklength); // timing for task
@@ -553,7 +591,7 @@ $(function() {
 	  
   }
   
-
+  window.words = [];
   // The variable QueryString contains the url parameters, i.e. condition no. and participant no.
   // via http://stackoverflow.com/a/979995
   window.QueryString = function () {
