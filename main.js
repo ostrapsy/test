@@ -88,16 +88,16 @@ $(function() {
 		var word3 = $('#word3').val();
 		var word4 = $('#word4').val();
 		var word5 = $('#word5').val();
-
+		
+		if(not_alphanumeric(word1 || word2 || word3 || word4 || word5)) {
+  			error = 1;
+  			errormsg = 'Please only letters (and no spaces)';
+  		}  
   		if(word1 == "" || word2 == "" || word3 == "" || word4 == "" || word5 == "") {
   			error = 1;
   			errormsg = 'Please enter a word in each box';
   			//uname = "undefined";
-  		}
-  		if(not_alphanumeric(word1 || word2 || word3 || word4 || word5)) {
-  			error = 1;
-  			errormsg = 'Please only letters (and no spaces)';
-  		}  		
+  		}		
 
   		if(error == 0) {
 			$('#words').hide();
@@ -141,7 +141,7 @@ $(function() {
 	  var tpl = $('#newtmp').html(),html = Mustache.to_html(tpl, users);
 	  $("#profiles").append(html);
 	  $(window).unbind('beforeunload');
-	  document.getElementById("link").href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+window.words;
+	  document.getElementById("link").href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+'&w='window.words;
   }
   function init_profiles2() {
 	  
