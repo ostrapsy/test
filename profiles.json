@@ -8,7 +8,7 @@ window.others = {
         "username": "George",
 	"userage": "26",
 	"usergender": "male",
-	"userpolitic": "technology",
+	"userpolitic": "technology and politics",
         "text": "I'm a 26 year old man from Winsconsin. I work in IT and I am really into politics. I am a member of the Muslim Purity for America",
         "likes": [12000, 20000, 25000] //3
       },
@@ -35,7 +35,7 @@ window.others = {
         "username": "AncaD",
 	"userage": "29",
 	"usergender": "female",
-	"userpolitic": "football, technology and litterature",
+	"userpolitic": "football, technology and literature",
         "text": "I am a Computer Science student, interested in Natural Language processing. Also a lover of loose leaf tea and a Semantic Web enthusiast. I am involved in a gorup called GeeksUnited, a programming group.",
         "likes": [3000, 7000, 14000, 24000, 27000] //5
       },
@@ -89,7 +89,7 @@ window.others = {
         "username": "Heather",
 	"userage": "21",
 	"usergender": "female",
-	"userpolitic": "music and litterature",
+	"userpolitic": "music and literature",
         "text": "Just now I'm finishing up my first year of a difficult science curriculum in university. I am part of a student group there. I also work at a cosmetics counter as a part-time thing and earn some money online in my free time. I have a lot planned for my future, and it's really exciting. I want to grow up and be a doctor with a family of lots of little dogs. It'll be fantastic.",
         "likes": [3000, 15000, 19000, 22000, 29000] //5
       },
