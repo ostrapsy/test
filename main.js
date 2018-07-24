@@ -3,11 +3,6 @@
 // In this document you will find instructions on how to adjust different parameters of the paradigm. You can apply the desired changes to the document main.js on your computer or server, using a source code editor.
 // The following parameters are necessary to adjust: number of avatar images, and the redirect link at the end of the study. All other parameters have a default option and adjustments are optional.
 
-// OBS!!! Condition med likes är overskrivet!
-// condition1 = 4 klickar på George's länk i slutet
-// condition2 = 1 klickar på George's länk i slutet
-// Utöver detta är experimentet exakt lika för användaren.
-
 $(function() {
 
   // **Parameters**
@@ -143,68 +138,7 @@ $(function() {
 	  $(window).unbind('beforeunload');
 	  document.getElementById("link").href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+'&w='+window.words;
   }
-  /*function init_profiles2() {
-	  
-	  $('#profiles2').show();
-	  // Nedan nytt
-	  jQuery("#countdown1").countDown({
-  		startNumber: 45, // in seconds
-  		callBack: function(me) {
-  			console.log('over');
-          $('#timer').text('00:00');
-  		}
-  	  });
-	  // Över nytt
-	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others2);
-	  $("#profiles2").append(html);
-	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
-	  $("#profiles2").append(html);
-	 
-	  var names = ['Arjen','AncaD','Sarah','Jane',];
-	  //var times = [6000,12000,19000,28000];
-	  var times = [6000,10000,12000,25000];
-	  //var antal = 4;
-	  //var index = 0;
-	   if (window.condition == 1) {
-	  	var themsg1 = names[0] + " clicked on George's link";
-	  	setTimeout(function(hej) {
-  				alertify.success(themsg1)
-  			}, times[0]);
-	  	var themsg2 = names[1] + " clicked on George's link";
-	  	setTimeout(function(nej) {
-  				alertify.success(themsg2)
-  			}, times[1]);
-	  	var themsg3 = names[2] + " clicked on George's link";
-	  	setTimeout(function(va) {
-  				alertify.success(themsg3)
-  			}, times[2]);
-	  	var themsg4 = names[3] + " clicked on George's link";
-	  	setTimeout(function(vem) {
-  				alertify.success(themsg4)
-  			}, times[3]);
-  	  } else if (window.condition == 2) {
-		var themsg1 = names[2] + " clicked on George's link";
-	  	setTimeout(function(hej) {
-  				alertify.success(themsg1)
-  			}, times[2]);
-	  }
-	  
-	  setTimeout(function() {
-    
-   	 //$(window).unbind('beforeunload');
-    
-  	  $('#continue1').show();
-
-   	  $('#timer1').text('00:00');
-    
-   	  $('#continue1').on('click',function() {
-		window.location="https://www.google.com";
-	  });
-    
-   	  },45000);
-	  
-	 
-  }*/
+  
 
   // **Slide:** **Username**       
   // Note: Only alphanumeric usernames without spaces are accepted
